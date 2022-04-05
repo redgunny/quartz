@@ -10,7 +10,7 @@ Abilità di un programma o protocollo di tentare di riparare/sistemare un proble
 Usato per comunicare problemi di connessione, usato spesso dai router o remote host per comunicare perchè una trasmissione è fallita mandando un "messaggio" all'origine della trasmissione (Fonte)
 
 ## ICMP Packet
-L'ICMP Header inizia dopo l'header IPv4 che nel campo [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Network%20Layer.md#^i9ndhq%7C%22Protocol%22) sarà identificato come "1" (Protocollo 1)
+L'ICMP Header inizia dopo l'header IPv4 che nel campo [[Studio/It Support/Bits and Bytes of Networking/Network Layer#^i9ndhq|"Protocol"]] sarà identificato come "1" (Protocollo 1)
 ![](https://i.imgur.com/1ky4jL8.png)
 ### ICMP Packet Fields
 - Type [8bit]: il tipo di messaggio che sta venendo spedito (Echo reply[0], Destination Unreachable[3], Time Exceeded[11], Echo Request[8])
@@ -28,7 +28,7 @@ Programma semplicissimo, ti permette di inviare un tipo speciale di messaggio IC
 ### ICMP Echo Request
 Chiede semplicemente alla destinazione "hey ci sei?", se la destinazione è connessa e funzionante manderà un **ICMP Echo Reply**
 ### ICMP Echo Reply
-Risposta alla [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Troubleshooting%20Networks.md#ICMP%20Echo%20Request%7CEcho%20Request) nel caso il computer sia connesso e funzionante invierà la echo reply al mittente dell'Echo Request
+Risposta alla [[Studio/It Support/Bits and Bytes of Networking/Troubleshooting Networks#ICMP Echo Request|Echo Request]] nel caso il computer sia connesso e funzionante invierà la echo reply al mittente dell'Echo Request
 
 >[!attention]- Ping
 >Ping o una sua variante può essere usato come metodo d'attacco Distributed Denial of Service 
@@ -60,7 +60,7 @@ traceroute ipdestinazione
 ```
 
 # Testing Port Connectivity
-Utilities per testare il corretto funzionamento delle [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Transport%20Layer.md#Porta%20Port%7Cporte).
+Utilities per testare il corretto funzionamento delle [[Studio/It Support/Bits and Bytes of Networking/Transport Layer#Porta Port|porte]].
 
 ## Linux/MacOS
 Viene utilizzato netcat 
@@ -109,6 +109,6 @@ Esempio
 
 ## Flag addizionali
 ### set type
-Puoi inserire `set type = recourcerecordtype` per specificare il tipo di [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#Resource%20Records%20Types%7Cresource%20record%20type) che vuoi venga restituito (di default restituirà [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#A%20Record%7CA%20Record) )
+Puoi inserire `set type = recourcerecordtype` per specificare il tipo di [[Studio/It Support/Bits and Bytes of Networking/Name Resolution#Resource Records Types|resource record type]] che vuoi venga restituito (di default restituirà [[Studio/It Support/Bits and Bytes of Networking/Name Resolution#A Record|A Record]] )
 ### set debug
 Puoi inserire `set debug` , questo permetterà allo strumento di visualizzare i pacchetti di risposta per intero, incluse le richieste intermediarie 

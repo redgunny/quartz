@@ -46,14 +46,14 @@ For example, the structure of the home page can be edited through `/layouts/inde
 
 More info about partials on [Hugo's website.](https://gohugo.io/templates/partials/)
 
-Still having problems? Checkout our [FAQ and Troubleshooting guide](notes/troubleshooting.md).
+Still having problems? Checkout our [[notes/troubleshooting|FAQ and Troubleshooting guide]].
 
 ## Multilingual
-[CJK + Latex Support (测试)](%E6%B5%8B%E8%AF%95)).md) comes out of the box with Quartz.
+[[测试)](测试|CJK + Latex Support (测试)]]).md) comes out of the box with Quartz.
 
 Want to support languages that read from right-to-left (like Arabic)? Hugo (and by proxy, Quartz) supports this natively.
 
-Follow the steps [](https://gohugo.io/content-management/multilingual/#configure-languages) and modify your `config.toml`
+Follow the steps [[https://gohugo.io/content-management/multilingual/#configure-languages]] and modify your `config.toml`
 
 For example:
 

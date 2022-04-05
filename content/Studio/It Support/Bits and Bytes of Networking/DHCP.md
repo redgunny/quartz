@@ -1,15 +1,15 @@
 >[!info]-
-Per funzionare su una rete con [Modello TCP IP](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Modello%20TCP%20IP.md) moderna un computer ha bisogno che siano configurate 4 cose:
+Per funzionare su una rete con [[Studio/It Support/Bits and Bytes of Networking/Modello TCP IP]] moderna un computer ha bisogno che siano configurate 4 cose:
 > 1. Indirizzo IP
-> 2. [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Subnetting.md#Subnet%20Mask%7Csubnet%20mask) della rete locale
-> 3. [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Subnetting.md#^afaac9%7CGateway) (primario)
-> 4. [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#Tipi%20di%20server%20DNS%7CDSN%20name%20server)
+> 2. [[Studio/It Support/Bits and Bytes of Networking/Subnetting#Subnet Mask|subnet mask]] della rete locale
+> 3. [[Studio/It Support/Bits and Bytes of Networking/Subnetting#^afaac9|Gateway]] (primario)
+> 4. [[Studio/It Support/Bits and Bytes of Networking/Name Resolution#Tipi di server DNS|DSN name server]]
 > #inserire_immagine 
 > 
 > Con gli ultimi tre che sono principalmente uguali per ogni nodo nella rete locale e con l'indirizzo IP che invece cambia per ogni nodo
 
 # Dynamic Host Configuration Protocol (DHCP)
-Un protocollo dell'[Application Layer](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Application%20Layer.md) che automatizza il processo di configurazione degli host su una rete, utile specialmente se in una rete sono presenti un gran numero di dispositivi.
+Un protocollo dell'[[Studio/It Support/Bits and Bytes of Networking/Application Layer]] che automatizza il processo di configurazione degli host su una rete, utile specialmente se in una rete sono presenti un gran numero di dispositivi.
 
 >[!note]-
 >Per un gateway router o per un server il DHCP potrebbe essere meno utile, meglio un IP statico impostato a mano
@@ -22,7 +22,7 @@ Metodo più comune per un protocollo DHCP di impostare gli IP. Un intervallo di 
 Un IP dello stesso dispositivo sotto questo tipo di DHCP potrebbe essere diverso ogni volta che si connette a questa rete
 
 ## DHCP Automatic Allocation
-Simile alla [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/DHCP.md#DHCP%20Dynamic%20Allocation%7CDynamic%20Allocation) un intervallo di indirizzi IP è messo da parte allo scopo di essere assegnati.
+Simile alla [[Studio/It Support/Bits and Bytes of Networking/DHCP#DHCP Dynamic Allocation|Dynamic Allocation]] un intervallo di indirizzi IP è messo da parte allo scopo di essere assegnati.
 La differenza sta che al server DHCP è chiesto di tenere traccia di quale IP è stato assegnato a un certo dispositivo in passato
 
 Un IP dello stesso dispositivo sotto questo di DHCP dovrebbe essere uguale ogni volta che si connette
@@ -40,12 +40,12 @@ Può essere utile come misura di sicurezza, ai mac address non elencati non sar�
 Processo tramite il quale un client configurato per usare il DHCP prova a ottenere informazioni sulla configurazione di rete
 
 ### DHCP discover address
-![DHCP%20discover.jpg](DHCP%2520discover.jpg)
+![[Studio/It Support/WebPages/Week 4 Google IT Support Professional Certificate 11  Course 2 WEEK 4 Networking Services — Steemit/DHCP discover.jpg|DHCP%20discover.jpg]]
 ### DHCP Offer
-![DHCP%20offer.jpg](DHCP%2520offer.jpg)
+![[Studio/It Support/WebPages/Week 4 Google IT Support Professional Certificate 11  Course 2 WEEK 4 Networking Services — Steemit/DHCP offer.jpg|DHCP%20offer.jpg]]
 ### DHCP Request
-![DHCP%20request.jpg](DHCP%2520request.jpg)
+![[Studio/It Support/WebPages/Week 4 Google IT Support Professional Certificate 11  Course 2 WEEK 4 Networking Services — Steemit/DHCP request.jpg|DHCP%20request.jpg]]
 ### DHCP ACK
-![dhcpack](Studio/It%20Support/WebPages/Week%204%20Google%20IT%20Support%20Professional%20Certificate%2011%20%20Course%202%20WEEK%204%20Networking%20Services%20%E2%80%94%20Steemit/dhcpack.jpg)
+![[Studio/It Support/WebPages/Week 4 Google IT Support Professional Certificate 11  Course 2 WEEK 4 Networking Services — Steemit/dhcpack.jpg]]
 ### DHCP Lease
-Per quanto dura il "prestito" dell'indirizzo IP assegnato dal DHCP, dopo il quale il cliente dovrà ricominciare tutto il [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/DHCP.md#DHCP%20Discovery%7Cprocesso) di nuovo 
+Per quanto dura il "prestito" dell'indirizzo IP assegnato dal DHCP, dopo il quale il cliente dovrà ricominciare tutto il [[Studio/It Support/Bits and Bytes of Networking/DHCP#DHCP Discovery|processo]] di nuovo 

@@ -38,7 +38,7 @@ La notazione del CIDR può essere usata anche sugli IPv6
 
 - Next Header field [8bit]: concetto unico IPv6, definisce quale tipo di header è presente immediatamente dopo quello corrente. Questi ultimi header sono opzionali, possono essenzialmente essere concatenati per inserire un sacco di opzioni
 
-- Hop Limit [8bit]: Praticamente il [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Network%20Layer.md#^2262cc%7CTTL) di un IPv4
+- Hop Limit [[Studio/It Support/Bits and Bytes of Networking/Network Layer#^2262cc|TTL]] di un IPv4
 
 - Source Address [128bit]: Indirizzo da cui il datagramma è stato spedito
 

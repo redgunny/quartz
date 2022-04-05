@@ -10,7 +10,7 @@ elevando 2 alla potenza del numero di bit presenti otteniamo il numero decimale 
 
 |                                         |                                 |
 | --------------------------------------- | ------------------------------- |
-| ![left-wrap\|300](binary%2520count.jpg%5C) | ![300](binary%2520addition.jpg%5C) |
+| ![[binary%20count.jpg\|left-wrap\|300]] | ![[binary%20addition.jpg\|300]] |
 
 L'addizione è conosciuta come uno degli operatori (operators) gli altri due importanti operatori sono:
 ## Operatore AND
@@ -36,4 +36,4 @@ Se uno dei due valori è vero(1) allora il risultato sarà vero(1) altrimenti sa
 | 0   | OR        | 1   | 1 (true)  |
 
 ## Calcolo subnet Mask
-![Calcolo Subnet Mask 15.40.10.excalidraw](Studio/Excalidraw/Calcolo%20Subnet%20Mask%2015.40.10.excalidraw.md)
+![[Studio/Excalidraw/Calcolo Subnet Mask 15.40.10.excalidraw]]

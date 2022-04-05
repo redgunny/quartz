@@ -2,10 +2,10 @@
 ## Cavi
 Esistono principalmente 2 categorie di cavi di rete:
 - **Rame:** Utilizza il cambio tensione tra due intervalli per simulare gli 0 e 1 dei bit
-	- Cat5, Cat5e, Cat6: Più il numero di categoria aumenta più il [Crosstalk](#Crosstalk%20Diafonia%20) viene diminuito
+	- Cat5, Cat5e, Cat6: Più il numero di categoria aumenta più il [[#Crosstalk Diafonia |Crosstalk]] viene diminuito
 #inserire_immagine 
 - **Fibra Ottica:** Contiene piccoli tubi fatti di vetro che trasmettono luce, più costosa ma anche più veloce ^08foh8
-	- [Broadband Connections (and more)](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Broadband%20Connections%20(and%20more).md)
+	- [[and more)](Studio/It Support/Bits and Bytes of Networking/Broadband Connections (and more|Broadband Connections (and more)]].md)
 
 #inserire_immagine 
 ## Crosstalk (Diafonia): #crosstalk

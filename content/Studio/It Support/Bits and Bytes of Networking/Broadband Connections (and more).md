@@ -17,7 +17,7 @@ Misura di quanti bits possono passare attraverso una linea telefonica in secondi
 Di 14.4 Kbps (kilobit per secondo) => velocità di quando è stata commercializzata per i consumatori
 
 # Broadband (Banda Larga)
-Qualsiasi tecnologia di connessione che non sia [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Broadband%20Connections%20(and%20more).md#Dial%20Up%20Connection%20narrow%20Band%7Cdial%20up)  internet
+Qualsiasi tecnologia di connessione che non sia [[Studio/It Support/Bits and Bytes of Networking/Broadband Connections (and more]].md#Dial%20Up%20Connection%20narrow%20Band%7Cdial%20up)  internet
 Sono connessioni di lunga durata che non hanno bisogno di essere stabilite ogni volta che si usano
 
 ## Digital Subscriber Lines
@@ -30,7 +30,7 @@ Trasferimento di dati e telefonate in contemporanea sulla stessa linea
 #### DSLAM (Digital Subscriber Line Access Multiplexer)
 <u>**Modem** **DLS**</u>, questi dispositivi stabiliscono connessioni attraverso la linea telefonica ma differentemente dalla connessione dial-up sono di più lunga durata.
 La connessione rimane stabilita da quando il modem DLSAM si accende e viene tirata giù quando il modem DLSAM si spegne
-![modem](Studio/It%20Support/WebPages/Week%205%20Google%20IT%20Support%20Professional%20Certificate%2012%20%20Course%202%20WEEK%205%20Connecting%20to%20the%20Internet%20%E2%80%94%20Steemit/modem.jpg)
+![[Studio/It Support/WebPages/Week 5 Google IT Support Professional Certificate 12  Course 2 WEEK 5 Connecting to the Internet — Steemit/modem.jpg]]
 #### ADSL (Asymmetric Digital Subscriber Lines)
 Velocità differenti in uscita (un minore upload) e in entrata (un maggiore download) 
 
@@ -45,7 +45,7 @@ Le compagnie tv via cavo realizzarono presto che anche i loro cavi coassiali (co
 
 >[!info]+ Shared Bandwidth
 >Il Cable broadband è generalmente usato in  <u>shared bandwidth</u> (banda condivisa) ovvero gli utenti connessi allo stesso cavo condividono la banda di trasferimento, cosa che può risultare in rallentamenti nelle ore con più traffico internet se la banda non basta
-> ![cable%20vsdsl.jpg](cable%2520vsdsl.jpg)
+> ![[Studio/It Support/WebPages/Week 5 Google IT Support Professional Certificate 12  Course 2 WEEK 5 Connecting to the Internet — Steemit/cable vsdsl.jpg|cable%20vsdsl.jpg]]
 
 ### Cable Modem
 Dispositivo che sta al bordo di una rete per consumatori e la connette al cable modem termination system
@@ -60,20 +60,20 @@ Originariamente inventate da AT&T al fine di trasmettere multiple chiamate telef
 
 | Tecnologia T-carrier  | chiamate contemporanee                                                               | Mbit/s |
 | --------------------- | ------------------------------------------------------------------------------------ | ------ |
-| Transmission System 1 | 24 attraverso singolo [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Physical%20Layer.md#Doppino%20Interlacciato%20Twisted%20Pair%5C%7Cdoppino) | 1544   |
+| Transmission System 1 | 24 attraverso singolo [[Studio/It Support/Bits and Bytes of Networking/Physical Layer#Doppino Interlacciato Twisted Pair\|doppino]] | 1544   |
 | Transmission System 2 | 28 volte il Transmission System 1 (28*24=672)                                        |  44736      |
 
 
 # Fibra Ottica
 Usa la luce invece della corrente elettrica
 ## Tipi di fibra
-![](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Cavi%20di%20Rete.md#^08foh8)
+![[Studio/It Support/Bits and Bytes of Networking/Cavi di Rete#^08foh8]]
 
 ### FFTX (Fiber to the X)
 La "x" può essere una ti tante cose
 
 ### FTTP (Fiber To The Premises)
-![fttn%20fttb%20ftth.jpg](fttn%2520fttb%2520ftth.jpg)
+![[Studio/It Support/WebPages/Week 5 Google IT Support Professional Certificate 12  Course 2 WEEK 5 Connecting to the Internet — Steemit/fttn fttb ftth.jpg|fttn%20fttb%20ftth.jpg]]
 #### FTTN
 Fiber to the neighborhood (fibra al vicinato)
 #### FTTB
@@ -83,6 +83,6 @@ Fiber to the home (fibra fino in casa)
 
 
 ### ONT (Optical Network Terminator)
-Invece che un modem il punto di [demarcazione](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Demarcation%20Point.md) è conosciuto come Optical Network Terminator.
+Invece che un modem il punto di [[Studio/It Support/Bits and Bytes of Networking/Demarcation Point|demarcazione]] è conosciuto come Optical Network Terminator.
 
-Converte dai protocolli che la rete in fibra può coprire ai protocolli più tradizionali come quello delle reti di [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Physical%20Layer.md#Doppino%20Interlacciato%20Twisted%20Pair%7Cdoppini%20interlacciati)
+Converte dai protocolli che la rete in fibra può coprire ai protocolli più tradizionali come quello delle reti di [[Studio/It Support/Bits and Bytes of Networking/Physical Layer#Doppino Interlacciato Twisted Pair|doppini interlacciati]]
