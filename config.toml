@@ -1,4 +1,4 @@
-baseURL = "https://github.com/redgunny/quartz"
+baseURL = "https://redgunny.github.io/quartz/"
 languageCode = "en-us"
 googleAnalytics = "G-XYFD95KB4J"
 pygmentsUseClasses = true
