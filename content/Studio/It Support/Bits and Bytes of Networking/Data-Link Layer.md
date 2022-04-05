@@ -1,14 +1,14 @@
 # Layer Data-Link
 #ethernet #mac_address #switch #Data-Link_Layer #reti 
-![[Studio/It Support/Bits and Bytes of Networking/Modello TCP IP#^4c42e6]]
-Il [[Studio/It Support/Bits and Bytes of Networking/Modello TCP IP#2 Data-Link Layer Layer altri_nomi|Data-Link Layer]] (assieme il protocollo Ethernet) ha il compito di eliminare il bisogno dei layer superiori (Network, Transport, Application) del bisogno di sapere quello che succede nel layer fisico e di che hardware è in uso. In questo modo i layer superiori [^1]  possono funzionare grossomodo in modo indipendente dalla connessione del dispositivo in funzione
+![](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Modello%20TCP%20IP.md#^4c42e6)
+Il [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Modello%20TCP%20IP.md#2%20Data-Link%20Layer%20Layer%20altri_nomi%7CData-Link%20Layer) (assieme il protocollo Ethernet) ha il compito di eliminare il bisogno dei layer superiori (Network, Transport, Application) del bisogno di sapere quello che succede nel layer fisico e di che hardware è in uso. In questo modo i layer superiori [^1]  possono funzionare grossomodo in modo indipendente dalla connessione del dispositivo in funzione
 
 >[!INFO]-  Esempi
 > Ad esempio il browser non ha bisogno di sapere se si è connessi per avviarsi
 
 >[!NOTE]- CSMA/CD (Carrier Sense Multiple Access w/ Collision Detection)
-> Protocollo di rete Ethernet (Layer 2), che risolve il problema dell [[Studio/It Support/Bits and Bytes of Networking/Alcuni Dispositivi di Rete#^3b7c91 |Collision Domain]] in reti utilizzanti l'hub (o qualsiasi altro "ripetitore" del layer fisico). 
-> Il Protocollo determina quando i canali di comunicazioni sono liberi e quindi quando un dispositivo è libero di trasmettere i dati ([[Studio/It Support/Bits and Bytes of Networking/Physical Layer#Half Duplex |Half Duplex]])
+> Protocollo di rete Ethernet (Layer 2), che risolve il problema dell [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Alcuni%20Dispositivi%20di%20Rete.md#^3b7c91%20%7CCollision%20Domain) in reti utilizzanti l'hub (o qualsiasi altro "ripetitore" del layer fisico). 
+> Il Protocollo determina quando i canali di comunicazioni sono liberi e quindi quando un dispositivo è libero di trasmettere i dati ([](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Physical%20Layer.md#Half%20Duplex%20%7CHalf%20Duplex))
 
 ## Mac Address (Media Access Control  address):
 Indirizzo <u>univoco</u> collegato a una singola interfaccia di rete (NIC, Network Interface Card)
@@ -64,7 +64,7 @@ Quasi tutte le sezioni di un frame ethernet sono obbligatorie e la maggior parte
 	- Destination (Mac address) Address [48 bit, 6 Byte]: Indirizzo hardware del dispositivo destinatario desiderato
 	- Source (Mac) Address [48 bit, 6 Byte]:  Indirizzo hardware di dove il frame è stato generato
 	- Ether-Type [18 bit, 2 Byte]: usato per descrivere il protocollo del contenuto del frame
-		- VLAN Header: si potrebbe trovare prima dell [[#VLAN|Ether-Type]]
+		- VLAN Header: si potrebbe trovare prima dell [Ether-Type](#VLAN)
 	- Payload [Da 46 a 1500 byte]: In termini di "rete" sono gli effettivi dati trasportati, contiene tutti i dati provenienti dai livelli superiori [^1] ^q8571z
 	- FCS (Frame Check Sequence) [32 bit, 4 Byte]: numero che rappresenta il valore Checksum dell'intero frame. Il Checksum value è calcolato eseguendo un cyclical redundancy check rispetto al frame ^2cbeac
 
@@ -73,7 +73,7 @@ Quasi tutte le sezioni di un frame ethernet sono obbligatorie e la maggior parte
 Concetto importante per l'integrità dei dati (usato un po' ovunque nei computer).
 Trasformazione matematica che usa la divisione polinomiale per creare un numero che rappresenta un grande insieme di dati.
 Ogni volta che si esegue CRC contro i dati dovrebbe dovresti ottenere lo stesso Checksum number.
-Quando un dispositivo si prepara a inviare un frame colleziona tutte l informazioni (tutti i campi dell'header) quindi esegue un CRC contro quei dati e allega il risultato come numero Checksum alla fine del frame ethernet nel [[#^2cbeac|FCS]] 
+Quando un dispositivo si prepara a inviare un frame colleziona tutte l informazioni (tutti i campi dell'header) quindi esegue un CRC contro quei dati e allega il risultato come numero Checksum alla fine del frame ethernet nel [FCS](#%5E2cbeac) 
 
 ## VLAN
 #VLAN
@@ -111,10 +111,10 @@ In questo modo è possibile avere solo una rete fisica che funziona come fossero
 	- Tutti i dati dei protocolli superiori
 	
 - **FCS (Frame Check Sequence)**
-	- contiene un checksum usato per un controllo ridondante (esattamente come quello [[Studio/It Support/Bits and Bytes of Networking/Data-Link Layer#Ethernet Frames Fields|ethernet]])
+	- contiene un checksum usato per un controllo ridondante (esattamente come quello [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Data-Link%20Layer.md#Ethernet%20Frames%20Fields%7Cethernet))
 
 >[!info]- Wireless Access Point (AP)
->![[Studio/It Support/Bits and Bytes of Networking/Alcuni Dispositivi di Rete#Wireless Access Point]]
+>![](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Alcuni%20Dispositivi%20di%20Rete.md#Wireless%20Access%20Point)
 
 
 

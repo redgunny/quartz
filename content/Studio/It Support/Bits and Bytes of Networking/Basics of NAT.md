@@ -4,10 +4,10 @@ Prende un indirizzo IP e lo traduce in un altro (per molte ragioni: dalle questi
 
 # NAT (Network Address Translation)
 
-Tecnologia che permette a un Gateway ( solitamente un [[Studio/It Support/Bits and Bytes of Networking/Subnetting#^afaac9|Router]] o un firewall) di riscrivere il [[Studio/It Support/Bits and Bytes of Networking/Network Layer#^vry423|source IP]] di un [[Studio/It Support/Bits and Bytes of Networking/Network Layer#IPv4 Datagram Header|datagramma IP]] in uscita mentre mantenendo (salvando?) l'IP originale in modo da riscriverlo nella risposta
+Tecnologia che permette a un Gateway ( solitamente un [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Subnetting.md#^afaac9%7CRouter) o un firewall) di riscrivere il [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Network%20Layer.md#^vry423%7Csource%20IP) di un [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Network%20Layer.md#IPv4%20Datagram%20Header%7Cdatagramma%20IP) in uscita mentre mantenendo (salvando?) l'IP originale in modo da riscriverlo nella risposta
 
 #inserire_immagine 
-![[Studio/It Support/WebPages/Week 4 Google IT Support Professional Certificate 11  Course 2 WEEK 4 Networking Services — Steemit/nat 1.jpg|nat%201.jpg]]
+![nat%201.jpg](Studio/It%20Support/WebPages/Week%204%20Google%20IT%20Support%20Professional%20Certificate%2011%20%20Course%202%20WEEK%204%20Networking%20Services%20%E2%80%94%20Steemit/nat%201.jpg)
 
 Ciò permette di avere 2 tipologie di IP:
 
@@ -26,9 +26,9 @@ Questo previene connessione dirette fra i PC di queste reti
 Inoltre è possibile avere molteplici host (PC) a cui l'IP viene "tradotto" dal router che maschererà tutti gli IP dei pc con lo stesso IP NAT
 
 
-## Nat e il [[Studio/It Support/Bits and Bytes of Networking/Transport Layer]]
+## Nat e il [Transport Layer](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Transport%20Layer.md)
 ### Port Preservation
-Tecnica nella quale la source port scelta dal client è la stessa usata dal router (Le porte per le connessioni in uscita usano una [[Studio/It Support/Bits and Bytes of Networking/Transport Layer#Ephemeral Port|porta effimera]])
+Tecnica nella quale la source port scelta dal client è la stessa usata dal router (Le porte per le connessioni in uscita usano una [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Transport%20Layer.md#Ephemeral%20Port%7Cporta%20effimera))
 
 Un router che effettua NAT terrà traccia delle source port e le userà per dirigere il traffico di ritorno al computer giusto
 
@@ -37,7 +37,7 @@ Un router che effettua NAT terrà traccia delle source port e le userà per diri
 ### Port Forwarding
 Una Tecnica dove una specifica porta di destinazione può essere configurata per essere inviata a nodi specifici
 
-Permette il trasferimento dati da un computer ad un altro tramite una specifica [[Studio/It Support/Bits and Bytes of Networking/Transport Layer#Porta Port|porta]] di comunicazione.
+Permette il trasferimento dati da un computer ad un altro tramite una specifica [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Transport%20Layer.md#Porta%20Port%7Cporta) di comunicazione.
 
 Permette a un host esterno alla rete di raggiungere un host con indirizzo IP privato
-![[Studio/Materiali/NAPT-en.svg]]
+![NAPT-en](Studio/Materiali/NAPT-en.svg)

@@ -3,9 +3,9 @@ Usate per collegare reti distanti in una singola unica rete.
 
 Agisce come rete ma si estende attraverso multipli luoghi fisici. Solitamente richiedono un accordo con il proprio ISP per inviare dati da un luogo all'altro (Site to Site)
 
-![[Studio/It Support/WebPages/Week 5 Google IT Support Professional Certificate 12  Course 2 WEEK 5 Connecting to the Internet — Steemit/localloop.jpg]]
+![localloop](Studio/It%20Support/WebPages/Week%205%20Google%20IT%20Support%20Professional%20Certificate%2012%20%20Course%202%20WEEK%205%20Connecting%20to%20the%20Internet%20%E2%80%94%20Steemit/localloop.jpg)
 ## Local Loop
-Il tratto fra il [[Studio/It Support/Bits and Bytes of Networking/Demarcation Point]] degli utenti e l'inizio del Core Network dell'ISP
+Il tratto fra il [Demarcation Point](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Demarcation%20Point.md) degli utenti e l'inizio del Core Network dell'ISP
 ## Point to Point VPN (Site to Site)
 Alternativa per connettere direttamente due parti fisicamente separate di una rete
-![[Studio/It Support/WebPages/Week 5 Google IT Support Professional Certificate 12  Course 2 WEEK 5 Connecting to the Internet — Steemit/point to point VPN.jpg|point%20to%20point%20VPN.jpg]]
+![point%20to%20point%20VPN.jpg](Studio/It%20Support/WebPages/Week%205%20Google%20IT%20Support%20Professional%20Certificate%2012%20%20Course%202%20WEEK%205%20Connecting%20to%20the%20Internet%20%E2%80%94%20Steemit/point%20to%20point%20VPN.jpg)

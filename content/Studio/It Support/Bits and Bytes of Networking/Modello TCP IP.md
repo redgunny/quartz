@@ -1,5 +1,5 @@
 ---
-banner: "![[Studio/Materiali/OSI_TCP_IP_large.jpg]]"
+banner: "![OSI_TCP_IP_large](Studio/Materiali/OSI_TCP_IP_large.jpg)"
 banner_y: 0.5
 ---
 
@@ -7,32 +7,32 @@ banner_y: 0.5
 
 
 
-# [[Studio/It Support/Bits and Bytes of Networking/Modello TCP IP]]:
+# [Modello TCP IP](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Modello%20TCP%20IP.md):
 
 | N°| Layer Name                    | Protocols             | Protocol Data Unit     | Addressing     | Devices                                      |
 | --| ----------------------------- | --------------------- | ---------------------- | -------------- | -------------------------------------------- |
-| [[#5 Application Layer\|5]] | [[Studio/It Support/Bits and Bytes of Networking/Application Layer]]             | Http, Https, Smtp, etc| Messages (Messaggi)    | n/a            | Browser, Email Client, etc                   |
-| [[Studio/It Support/Bits and Bytes of Networking/Modello TCP IP#4 Transport Layer Layer di trasporto\|4]] | [[Studio/It Support/Bits and Bytes of Networking/Transport Layer]]                     | TCP/UDP               | Segments (Segmenti)    | Port Number :# |                                              |
-| [[#3 Network Layer Layer di Rete altri_nomi_network\|3]] | [[Studio/It Support/Bits and Bytes of Networking/Network Layer]]                       | IPv4/IPv6             | Datagrams (Datagrammi) | IP Address     | Routers                                      |
-| [[#2 Data Link Layer altri_nomi\|2]] | [[Studio/It Support/Bits and Bytes of Networking/Data-Link Layer]]                     | Ethernet/Wifi         | Frames                 | Mac Adress     | Switch                                       |
-| [[#1 Physical Layer Layer Fisico\|1]] | [[Studio/It Support/Bits and Bytes of Networking/Physical Layer]] | 10 Base T, 802.11  | Bits (0 1)             | n/a            | [[Studio/It Support/Bits and Bytes of Networking/Alcuni Dispositivi di Rete#Hub\|Hubs]], Cavi di Rame, Fibra Ottica, Onde Radio |
+| [5](#5%20Application%20Layer%5C) | [Application Layer](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Application%20Layer.md)             | Http, Https, Smtp, etc| Messages (Messaggi)    | n/a            | Browser, Email Client, etc                   |
+| [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Modello%20TCP%20IP.md#4%20Transport%20Layer%20Layer%20di%20trasporto%5C%7C4) | [Transport Layer](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Transport%20Layer.md)                     | TCP/UDP               | Segments (Segmenti)    | Port Number :# |                                              |
+| [3](#3%20Network%20Layer%20Layer%20di%20Rete%20altri_nomi_network%5C) | [Network Layer](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Network%20Layer.md)                       | IPv4/IPv6             | Datagrams (Datagrammi) | IP Address     | Routers                                      |
+| [2](#2%20Data%20Link%20Layer%20altri_nomi%5C) | [Data-Link Layer](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Data-Link%20Layer.md)                     | Ethernet/Wifi         | Frames                 | Mac Adress     | Switch                                       |
+| [1](#1%20Physical%20Layer%20Layer%20Fisico%5C) | [Physical Layer](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Physical%20Layer.md) | 10 Base T, 802.11  | Bits (0 1)             | n/a            | [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Alcuni%20Dispositivi%20di%20Rete.md#Hub%5C%7CHubs), Cavi di Rame, Fibra Ottica, Onde Radio |
 
-Si compara con il [[Studio/It Support/Bits and Bytes of Networking/OSI model|modello OSI]]
+Si compara con il [modello OSI](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/OSI%20model.md)
 
-## 1.[[Studio/It Support/Bits and Bytes of Networking/Physical Layer]]:
+## 1.[Physical Layer](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Physical%20Layer.md):
 Rappresenta il dispositivo "fisico" che connette i computer. Il suo obiettivo è quello di gestire il mezzo trasmissivo (Ad esempio: Onde radio, corrente elettrica, segnale cavo) ^a6c30f
 
 ---
 
 
-## 2.[[Studio/It Support/Bits and Bytes of Networking/Data-Link Layer]] Layer: [^altri_nomi]
-Responsabile di definire un via comune di interpretare i segnali in modo da fare comunicare i dispositivi nella rete. (Ad esempio: [[#^4093fe |Standard Ethernet]], [[Standard WIFI]]). ^4c42e6
+## 2.[Data-Link Layer](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Data-Link%20Layer.md) Layer: [^altri_nomi]
+Responsabile di definire un via comune di interpretare i segnali in modo da fare comunicare i dispositivi nella rete. (Ad esempio: [Standard Ethernet](#%5E4093fe%20), [Standard WIFI](Standard%20WIFI)). ^4c42e6
 
 
 - **Standard Ethernet:** Protocollo responsabile per l'acquisizione di dati sulla stessa rete o collegamento ^4093fe
 
 
-## 3.[[Studio/It Support/Bits and Bytes of Networking/Network Layer#Layer di Rete|Network Layer]]: [^altri_nomi_network]
+## 3.[](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Network%20Layer.md#Layer%20di%20Rete%7CNetwork%20Layer): [^altri_nomi_network]
 Permette a diverse reti di comunicare fra di loro attraverso i Router. I dati possono attraversare molteplici reti e nodi ^5bomxv
 
 - Internetwork: Collezioni di reti connesse tramite routers, la più famosa è Internet
@@ -43,12 +43,12 @@ Permette a diverse reti di comunicare fra di loro attraverso i Router. I dati po
 ## 4. Transport Layer:
 Si occupa di individuare quale programma client deve inviare dati e quale programma server deve ricevere quei dati. Fa uso principalmente di uno di due protocolli:
 - **Protocollo TCP (Transmission Control Protocol):** Si assicura che i dati siano inviati correttamente attendendo conferma dal dispositivo ricevente. ^87c1fb
-- **Protocollo UDP (User Datagram Protocol):** Non affidabile quanto il [[#^87c1fb|Protocollo TCP]] ma un po' più veloce
+- **Protocollo UDP (User Datagram Protocol):** Non affidabile quanto il [Protocollo TCP](#%5E87c1fb) ma un po' più veloce
 
 
 
-## 5. [[Studio/It Support/Bits and Bytes of Networking/Application Layer]]:
- Primo layer da cui la trasmissione di pacchetti di dati ha inizio, ultimo layer a ricevere pacchetti dei dati, un sacco di protocolli lavorano su questo layer come ad esempio quelli per navigare sui siti internet o ricevere email.![[Studio/Excalidraw/Client-server-base.excalidraw|right-wrap]]
+## 5. [Application Layer](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Application%20Layer.md):
+ Primo layer da cui la trasmissione di pacchetti di dati ha inizio, ultimo layer a ricevere pacchetti dei dati, un sacco di protocolli lavorano su questo layer come ad esempio quelli per navigare sui siti internet o ricevere email.![right-wrap](Studio/Excalidraw/Client-server-base.excalidraw.md)
  
  Un singolo programma può essere definito per la funzione che ha nella rete, quella di richiedere dati (Client) e quella di ricevere richieste e rispondere con i dati (Server)  ^28682e
 

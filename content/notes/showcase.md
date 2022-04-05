@@ -4,7 +4,7 @@ title: "Showcase"
 
 Want to see what Quartz can do? Here are some cool community gardens :)
 
-- [[this site!)](this site!|Quartz Documentation (this site!)]])
+- [Quartz Documentation (this site!)](this%20site!)))
 - [Strengthening Online Social Bonds: Research Garden](https://communities.digital/)
 - [Jacky Zhao's Garden](https://garden.jzhao.xyz/)
 - [Anson Yu's Garden](http://garden.ansonyu.me/)

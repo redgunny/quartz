@@ -22,19 +22,19 @@ Un server che agisce per conto di un client per accedere un altro servizio, ovve
 >Un gateway rientra di sicuro nella definizione di cosa è un proxy e come funziona
 
 
-![[Studio/Materiali/Proxy_concept_en.svg]]
+![Proxy_concept_en](Studio/Materiali/Proxy_concept_en.svg)
 
 ## Web Proxies
 Proxy costruiti specificatamente per il traffico web, inoltrano le richieste HTTP che arrivano dal Client come normali richieste HTTP ai server
 
 ## Reverse Proxy
 Un servizio che potrebbe apparire come singolo server a client esterni ma in realtà rappresenta molti Server dietro esso 
-![[Studio/Materiali/Reverse_proxy_h2g2bob.svg]]
+![Reverse_proxy_h2g2bob](Studio/Materiali/Reverse_proxy_h2g2bob.svg)
 
 
 ## Proxy contro NAT
-La maggior parte delle volte con il termine proxy ci si riferisce ad un'applicazione del [[Studio/It Support/Bits and Bytes of Networking/Application Layer|livello 7]] del [[Studio/It Support/Bits and Bytes of Networking/OSI model|Modello OSI]].
-Ad ogni modo esistono altri modi di "proxare" uno di questi è attraverso il [[Studio/It Support/Bits and Bytes of Networking/Network Layer|Layer 3]] è conosciuto come [[Studio/It Support/Bits and Bytes of Networking/Basics of NAT#NAT Network Address Translation|NAT]]. Le differenze tra queste due tecnologie di realizzare proxy sono il livello in cui operano e la procedura di configurazione dei client e dei server che adottano.
+La maggior parte delle volte con il termine proxy ci si riferisce ad un'applicazione del [livello 7](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Application%20Layer.md) del [Modello OSI](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/OSI%20model.md).
+Ad ogni modo esistono altri modi di "proxare" uno di questi è attraverso il [Layer 3](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Network%20Layer.md) è conosciuto come [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Basics%20of%20NAT.md#NAT%20Network%20Address%20Translation%7CNAT). Le differenze tra queste due tecnologie di realizzare proxy sono il livello in cui operano e la procedura di configurazione dei client e dei server che adottano.
 
 Nella configurazione del client per il proxy di livello 3 (NAT) è sufficiente configurare il gateway. Per quello di livello 7 invece, la destinazione dei pacchetti che genera il client deve essere sempre il server proxy, che legge ogni pacchetto e trova la destinazione reale.
 
