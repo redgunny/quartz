@@ -2,7 +2,7 @@
 title: "Alcuni Dispositivi di Rete"
 tags:
 - reti
-entabletoc :true
+entabletoc: true
 #Reti 
 #Flashcards 
 ---

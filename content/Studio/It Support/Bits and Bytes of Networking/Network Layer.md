@@ -2,7 +2,7 @@
 title: "Network Layer"
 tags:
 - reti
-entabletoc :true
+entabletoc: true
 ---
 # Layer di Rete
 #TCP/IP #Network_Layer #reti 

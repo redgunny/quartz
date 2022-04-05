@@ -2,7 +2,7 @@
 title: "Cavi di Rete"
 tags:
 - reti
-entabletoc :true
+entabletoc: true
 ---
 #Reti #cavi
 ## Cavi

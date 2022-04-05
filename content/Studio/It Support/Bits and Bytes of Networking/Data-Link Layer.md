@@ -2,7 +2,7 @@
 title: "Data-Link Layer"
 tags:
 - reti
-entabletoc :true
+entabletoc: true
 #ethernet #mac_address #switch #Data-Link_Layer #reti 
 ---
 # Layer Data-Link

@@ -9,7 +9,7 @@ tags:
 - Nework_layer
 - Network
 - IP 
-entabletoc :true
+entabletoc: true
 ---
 
 # Subnetting

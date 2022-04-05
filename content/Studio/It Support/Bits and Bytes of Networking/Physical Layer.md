@@ -2,7 +2,7 @@
 title: "Physical Layer"
 tags:
 - reti
-entabletoc :true
+entabletoc: true
 #Reti 
 #Flashcards #Hub #Physical_layer #Reti
 ---

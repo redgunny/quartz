@@ -6,7 +6,7 @@ tags:
 - matematica
 - sistemaBinario
 #math #matematica #sistemaBinario
-entabletoc :true
+entabletoc: true
 ---
 # Matematica Binaria
 elevando 2 alla potenza del numero di bit presenti otteniamo il numero decimale massimo che si può rappresentare
