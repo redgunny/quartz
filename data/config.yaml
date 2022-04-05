@@ -10,6 +10,10 @@ page_title:
   "🪴 Quartz 3.2"
 links:
   - link_name: Twitter
+<<<<<<< HEAD
     link:
+=======
+    link: 
+>>>>>>> bd858cc570cfcc03d26d2df0429e2de8925df3b0
   - link_name: Github
     link: https://github.com/redgunny
