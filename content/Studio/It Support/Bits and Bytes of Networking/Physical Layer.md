@@ -1,5 +1,13 @@
+---
+title: "Physical Layer"
+tags:
+- reti
+entabletoc :true
+#Reti 
+#Flashcards #Hub #Physical_layer #Reti
+---
 # Layer Fisico (Physical Layer):
-#Hub #Physical_layer #Reti
+
 ![](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Modello%20TCP%20IP.md#^a6c30f)
 
 ## Bit:

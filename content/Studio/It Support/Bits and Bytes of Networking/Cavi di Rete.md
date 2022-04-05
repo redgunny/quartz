@@ -1,3 +1,9 @@
+---
+title: "Cavi di Rete"
+tags:
+- reti
+entabletoc :true
+---
 #Reti #cavi
 ## Cavi
 Esistono principalmente 2 categorie di cavi di rete:

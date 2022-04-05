@@ -1,4 +1,16 @@
-#reti #sottoreti #subnetting #subnetID #subnetMASK #Network_Layer #Network #IP 
+---
+title: "Subnetting"
+tags:
+- sottoreti
+- reti
+- subnetting
+- subnetID
+- subnetMASK
+- Nework_layer
+- Network
+- IP 
+entabletoc :true
+---
 
 # Subnetting
 Il processo di suddivisione di prendere una rete più grande e dividerla in più piccole sotto-reti individuali. Le sotto-reti  avranno poi bisogno ognuna di un [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Subnetting.md#^afaac9%7CGateway%20Router) che faccia da ingresso e uscita per la subnet. 

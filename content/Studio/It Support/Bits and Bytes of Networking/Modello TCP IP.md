@@ -1,6 +1,8 @@
 ---
+Title: "Modello TCP IP"
 banner: "![OSI_TCP_IP_large](Studio/Materiali/OSI_TCP_IP_large.jpg)"
 banner_y: 0.5
+entabletoc :true
 ---
 
 #Reti #TCP/IP #Network #Physical_layer #Data-Link_Layer #Network_Layer #Transport_Layer #Application_Layer 

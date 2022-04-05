@@ -1,5 +1,12 @@
+---
+title: "Alcuni Dispositivi di Rete"
+tags:
+- reti
+entabletoc :true
 #Reti 
 #Flashcards 
+---
+
 # Hub:
 #hub #Physical_layer 
 Dispositivo del Layer Fisico che permette connessioni da computer multipli.

@@ -1,5 +1,8 @@
 ---
-title: 🪴 Quartz 3.2
+title: "🪴 PROVA INDICE"
+tags:
+- indice
+entabletoc :true
 ---
 
 Host your second brain and [digital garden](https://jzhao.xyz/posts/networked-thought) for free. Quartz features
@@ -27,8 +30,7 @@ If you prefer browsing the contents of this site through a list instead of a gra
 - 👀 [Discord Community](https://discord.gg/cRFFHYye7t)
 
 
-# PROVA
-#reti
+## PROVA
 [Modello TCP IP](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Modello%20TCP%20IP.md)
 [Cavi di Rete](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Cavi%20di%20Rete.md)
 [Alcuni Dispositivi di Rete](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Alcuni%20Dispositivi%20di%20Rete.md)

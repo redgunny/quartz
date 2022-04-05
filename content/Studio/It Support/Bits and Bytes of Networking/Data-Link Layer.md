@@ -1,5 +1,12 @@
-# Layer Data-Link
+---
+title: "Data-Link Layer"
+tags:
+- reti
+entabletoc :true
 #ethernet #mac_address #switch #Data-Link_Layer #reti 
+---
+# Layer Data-Link
+
 ![](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Modello%20TCP%20IP.md#^4c42e6)
 Il [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Modello%20TCP%20IP.md#2%20Data-Link%20Layer%20Layer%20altri_nomi%7CData-Link%20Layer) (assieme il protocollo Ethernet) ha il compito di eliminare il bisogno dei layer superiori (Network, Transport, Application) del bisogno di sapere quello che succede nel layer fisico e di che hardware è in uso. In questo modo i layer superiori [^1]  possono funzionare grossomodo in modo indipendente dalla connessione del dispositivo in funzione
 
