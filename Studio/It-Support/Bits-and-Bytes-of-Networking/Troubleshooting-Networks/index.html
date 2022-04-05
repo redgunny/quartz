@@ -1,0 +1,276 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=description content="2 concetti molto importanti sono
+Error Detection L&rsquo;abilità di un programma o protocollo di determinare che qualcosa è andato storto">
+<title>🪴 PROVA 3.2</title>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" type=image/png href=https://redgunny.github.io/quartz//icon.png>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
+<link href=https://redgunny.github.io/quartz/styles.2cc445b139f028853c48b809a0390863.min.css rel=stylesheet>
+<script src=https://redgunny.github.io/quartz/js/darkmode.46b07878b7f5d9e26ad7a3c40f8a0605.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
+<script>const BASE_URL="https://redgunny.github.io/quartz/",fetchData=Promise.all([fetch("https://redgunny.github.io/quartz/indices/linkIndex.1caac048f6d9af9813f281992614d3ee.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://redgunny.github.io/quartz/indices/contentIndex.c44c478d005c04eb0b3d41db853259b3.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-XYFD95KB4J',{anonymize_ip:!1})}</script>
+<body>
+<div id=search-container>
+<div id=search-space>
+<input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something...">
+<div id=results-container>
+</div>
+</div>
+</div>
+<script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://redgunny.github.io/quartz/js/search.bc849b857f2c1b822264d40635bb67b6.min.js></script>
+<div class=singlePage>
+<header>
+<h1 id=page-title><a href=https://redgunny.github.io/quartz/>🪴 PROVA 3.2</a></h1><svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+<div class=spacer></div>
+<div class=darkmode>
+<input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg>
+</label>
+<label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg>
+</label>
+</div>
+</header>
+<article>
+<p class=meta>
+Last updated April 5, 2022
+</p>
+<ul class=tags>
+</ul>
+<aside class=mainTOC>
+<details>
+<summary>Table of Contents</summary>
+<nav id=TableOfContents>
+<ol>
+<li><a href=#icmp-packet>ICMP Packet</a>
+<ol>
+<li><a href=#icmp-packet-fields>ICMP Packet Fields</a></li>
+</ol>
+</li>
+<li><a href=#ping>Ping</a>
+<ol>
+<li><a href=#icmp-echo-request>ICMP Echo Request</a></li>
+<li><a href=#icmp-echo-reply>ICMP Echo Reply</a></li>
+<li><a href=#uso-windows>Uso Windows</a></li>
+</ol>
+</li>
+<li><a href=#traceroute>Traceroute</a>
+<ol>
+<li><a href=#uso-windows-1>Uso Windows</a></li>
+<li><a href=#uso-maclinux>Uso Mac/Linux</a></li>
+</ol>
+</li>
+</ol>
+<ol>
+<li><a href=#linuxmacos>Linux/MacOS</a></li>
+<li><a href=#windows-powershell>Windows Powershell</a></li>
+</ol>
+<ol>
+<li><a href=#nslookup>nslookup</a>
+<ol>
+<li><a href=#sessione-interattiva>Sessione interattiva</a></li>
+</ol>
+</li>
+<li><a href=#flag-addizionali>Flag addizionali</a>
+<ol>
+<li><a href=#set-type>set type</a></li>
+<li><a href=#set-debug>set debug</a></li>
+</ol>
+</li>
+</ol>
+</nav>
+</details>
+</aside>
+<p>2 concetti molto importanti sono</p>
+<h1 id=error-detection>Error Detection</h1>
+<p>L&rsquo;abilità di un programma o protocollo di determinare che qualcosa è andato storto</p>
+<h1 id=error-recovery>Error Recovery</h1>
+<p>Abilità di un programma o protocollo di tentare di riparare/sistemare un problema</p>
+<h1 id=icmp-internet-control-message-protocol>ICMP (Internet Control Message Protocol)</h1>
+<p>Usato per comunicare problemi di connessione, usato spesso dai router o remote host per comunicare perchè una trasmissione è fallita mandando un &ldquo;messaggio&rdquo; all&rsquo;origine della trasmissione (Fonte)</p>
+<h2 id=icmp-packet>ICMP Packet</h2>
+<p>L&rsquo;ICMP Header inizia dopo l&rsquo;header IPv4 che nel campo <a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Network-Layer#^i9ndhq rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Network-Layer>&ldquo;Protocol&rdquo;</a> sarà identificato come &ldquo;1&rdquo; (Protocollo 1)
+<img src=https://i.imgur.com/1ky4jL8.png alt></p>
+<h3 id=icmp-packet-fields>ICMP Packet Fields</h3>
+<ul>
+<li>
+<p>Type [8bit]: il tipo di messaggio che sta venendo spedito (Echo reply[0], Destination Unreachable[3], Time Exceeded[11], Echo Request[8])</p>
+</li>
+<li>
+<p>Code[8bit]: Indica una ragione più specifica (Per Destination Unreachable==>Destination network unreachable, Destination port unreachable, Destination host unknown)
+<img src=https://i.imgur.com/EseWfxE.png alt></p>
+</li>
+<li>
+<p>Rest of Header (Data) [32bit]: Opzionalmente usato da specifici tipi e codici d&rsquo;errore, per inviare più dati al riguardo</p>
+</li>
+<li>
+<p>Payload: Contiene i primi 8 Byte del data payload del pacchetto problematico</p>
+</li>
+</ul>
+<h2 id=ping>Ping</h2>
+<p>Programma semplicissimo, ti permette di inviare un tipo speciale di messaggio ICMP chiamato <strong>Echo Request</strong></p>
+<h3 id=icmp-echo-request>ICMP Echo Request</h3>
+<p>Chiede semplicemente alla destinazione &ldquo;hey ci sei?&rdquo;, se la destinazione è connessa e funzionante manderà un <strong>ICMP Echo Reply</strong></p>
+<h3 id=icmp-echo-reply>ICMP Echo Reply</h3>
+<p>Risposta alla <a href="/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Troubleshooting-Networks#ICMP Echo Request" rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Troubleshooting-Networks>Echo Request</a> nel caso il computer sia connesso e funzionante invierà la echo reply al mittente dell&rsquo;Echo Request</p>
+<blockquote>
+<p>[!attention]- Ping
+Ping o una sua variante può essere usato come metodo d&rsquo;attacco Distributed Denial of Service</p>
+</blockquote>
+<h3 id=uso-windows>Uso Windows</h3>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>ping -opzioni ipdestinazione
+</code></pre></td></tr></table>
+</div>
+</div><h2 id=traceroute>Traceroute</h2>
+<p>uno strumento (utility) che ti permette di scoprire gli indirizzi dei router fra te e l&rsquo;indirizzo di destinazione, ovvero il percorso tra 2 nodi.
+Ti da informazioni su ogni &ldquo;Hop&rdquo; lungo il percorso.</p>
+<p>Si occupa di ricavare il percorso seguito dai pacchetti sulle reti informatiche, utilizzando la manipolazione del campo TTL settandolo a partire da 1 e aumentandolo di 1 fino al raggiungimento dell&rsquo;IP di destinazione</p>
+<blockquote>
+<p>[!info]+ Simili
+Linux/Mac Os: mtr
+Windows: pathping
+che funzionano come dei &ldquo;lunghi&rdquo; traceroute così si può vedere meglio come le cose cambino nel tempo</p>
+</blockquote>
+<h3 id=uso-windows-1>Uso Windows</h3>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>tracert ipdestinazione
+</code></pre></td></tr></table>
+</div>
+</div><h3 id=uso-maclinux>Uso Mac/Linux</h3>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>traceroute ipdestinazione
+</code></pre></td></tr></table>
+</div>
+</div><h1 id=testing-port-connectivity>Testing Port Connectivity</h1>
+<p>Utilities per testare il corretto funzionamento delle <a href="/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Transport-Layer#Porta Port" rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Transport-Layer>porte</a>.</p>
+<h2 id=linuxmacos>Linux/MacOS</h2>
+<p>Viene utilizzato netcat</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>nc host(hostname o ip) portnumber
+</code></pre></td></tr></table>
+</div>
+</div><p>Esempio:</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>nc google.com 80
+</code></pre></td></tr></table>
+</div>
+</div><p>Se funziona il &ldquo;cursore&rdquo; (solitamente &ldquo;>&rdquo; o &ldquo;<strong>|</strong>") del terminale lampeggierà aspettando un input.</p>
+<p>Se sei solo curioso dello stato delle porta puoi eseguire il comando con la flag <code>-z</code> (zero input-output mode)
+Con la flag <code>-v</code> (verbose) aggiunge più dati rendendo il risultato del comando più comprensibile</p>
+<p>Esempio:</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>nc -z -v google.com 80
+</code></pre></td></tr></table>
+</div>
+</div><h2 id=windows-powershell>Windows Powershell</h2>
+<p>Viene utilizzato <code>test-netconnection</code></p>
+<ul>
+<li>Flag <code>-port</code> per testare la connettività di una porta specifica</li>
+</ul>
+<h1 id=name-resolution-tools-dns>Name Resolution Tools (DNS)</h1>
+<h2 id=nslookup>nslookup</h2>
+<p>Utilizzo:</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>nslookup hostname
+</code></pre></td></tr></table>
+</div>
+</div><h3 id=sessione-interattiva>Sessione interattiva</h3>
+<p>Per avviare la sessione nslookup interattiva inserire solo:</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>nslookup
+</code></pre></td></tr></table>
+</div>
+</div><p>In modalità interattiva se inserisci l&rsquo;IP di un server DNS con <code>server ipdelserverdns</code> tutte le name query saranno provate usando quel server DNS invece che quello di default impostato sul pc in uso
+Esempio</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>&gt;nslookup
+&gt;8.8.8.8
+</code></pre></td></tr></table>
+</div>
+</div><h2 id=flag-addizionali>Flag addizionali</h2>
+<h3 id=set-type>set type</h3>
+<p>Puoi inserire <code>set type = recourcerecordtype</code> per specificare il tipo di <a href="/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Name-Resolution#Resource Records Types" rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Name-Resolution>resource record type</a> che vuoi venga restituito (di default restituirà <a href="/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Name-Resolution#A Record" rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Name-Resolution>A Record</a> )</p>
+<h3 id=set-debug>set debug</h3>
+<p>Puoi inserire <code>set debug</code> , questo permetterà allo strumento di visualizzare i pacchetti di risposta per intero, incluse le richieste intermediarie</p>
+</article>
+<hr>
+<div class=page-end>
+<div class=backlinks-container>
+<h3>Backlinks</h3>
+<ul class=backlinks>
+<li>
+<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/0.-Bits-and-Bytes-of-Networking-index>Untitled Page</a>
+</li>
+<li>
+<a href=/quartz/>🪴 Quartz 3.2</a>
+</li>
+</ul>
+</div>
+<div>
+<script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script>
+<h3>Interactive Graph</h3>
+<div id=graph-container></div>
+<style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style>
+<script src=https://redgunny.github.io/quartz/js/graph.27e8521c25c27c79dea35f434c486167.js></script>
+<script>drawGraph("https://redgunny.github.io/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Troubleshooting-Networks","https://redgunny.github.io/quartz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
+</div>
+</div>
+<div id=contact_buttons>
+<footer>
+<p>Made by Umberto Visentin using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p>
+<ul>
+<li><a href=/>Home</a></li>
+<li><a href=https://twitter.com>Twitter</a></li><li><a href=https://github.com/redgunny>Github</a></li></ul>
+</footer>
+</div>
+<script src=https://redgunny.github.io/quartz/js/popover.9d69dffc0f2d029ef30cf63230ccce4c.min.js></script>
+<script>initPopover("https://redgunny.github.io/quartz")</script>
+</div>
+</body>
+</html>

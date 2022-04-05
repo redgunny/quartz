@@ -1,0 +1,289 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=description content="Layer Data-Link #ethernet #mac_address #switch #Data-Link_Layer #reti ![[Studio/It Support/Bits and Bytes of Networking/Modello TCP IP#^4c42e6]] Il [[Studio/It Support/Bits and Bytes of Networking/Modello TCP IP#2 Data-Link Layer Layer altri_nomi|Data-Link Layer]] (assieme il protocollo Ethernet) ha il compito di eliminare il bisogno dei layer superiori (Network, Transport, Application) del bisogno di sapere quello che succede nel layer fisico e di che hardware è in uso.">
+<title>🪴 PROVA 3.2</title>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" type=image/png href=https://redgunny.github.io/quartz//icon.png>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
+<link href=https://redgunny.github.io/quartz/styles.2cc445b139f028853c48b809a0390863.min.css rel=stylesheet>
+<script src=https://redgunny.github.io/quartz/js/darkmode.46b07878b7f5d9e26ad7a3c40f8a0605.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
+<script>const BASE_URL="https://redgunny.github.io/quartz/",fetchData=Promise.all([fetch("https://redgunny.github.io/quartz/indices/linkIndex.1caac048f6d9af9813f281992614d3ee.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://redgunny.github.io/quartz/indices/contentIndex.c44c478d005c04eb0b3d41db853259b3.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-XYFD95KB4J',{anonymize_ip:!1})}</script>
+<body>
+<div id=search-container>
+<div id=search-space>
+<input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something...">
+<div id=results-container>
+</div>
+</div>
+</div>
+<script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://redgunny.github.io/quartz/js/search.bc849b857f2c1b822264d40635bb67b6.min.js></script>
+<div class=singlePage>
+<header>
+<h1 id=page-title><a href=https://redgunny.github.io/quartz/>🪴 PROVA 3.2</a></h1><svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+<div class=spacer></div>
+<div class=darkmode>
+<input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg>
+</label>
+<label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg>
+</label>
+</div>
+</header>
+<article>
+<p class=meta>
+Last updated April 5, 2022
+</p>
+<ul class=tags>
+</ul>
+<aside class=mainTOC>
+<details>
+<summary>Table of Contents</summary>
+<nav id=TableOfContents>
+<ol>
+<li><a href=#mac-address-media-access-control--address>Mac Address (Media Access Control address):</a></li>
+<li><a href=#trasmissione-unicast>Trasmissione Unicast:</a></li>
+<li><a href=#trasmissione-multicast>Trasmissione Multicast:</a></li>
+<li><a href=#trasmissione-broadcast-layer-2>Trasmissione Broadcast (Layer 2):</a></li>
+<li><a href=#ethernet-frames>Ethernet Frames</a>
+<ol>
+<li><a href=#ethernet-frames-fields>Ethernet Frames Fields:</a></li>
+<li><a href=#campi-del-frame-ethernet-otqerp>Campi del Frame Ethernet: ^otqerp</a></li>
+</ol>
+</li>
+<li><a href=#cyclical-redundancy-check-crc>Cyclical Redundancy Check (CRC):</a></li>
+<li><a href=#vlan>VLAN</a></li>
+<li><a href=#wi-fi-frame>WI-FI Frame</a>
+<ol>
+<li><a href=#wifi-frames-fields>WiFi Frames Fields</a></li>
+</ol>
+</li>
+</ol>
+</nav>
+</details>
+</aside>
+<h1 id=layer-data-link>Layer Data-Link</h1>
+<p>#ethernet #mac_address #switch #Data-Link_Layer #reti
+!<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Modello-TCP-IP#^4c42e6 rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Modello-TCP-IP>Studio/It Support/Bits and Bytes of Networking/Modello TCP IP</a>
+Il <a href="/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Modello-TCP-IP#2 Data-Link Layer Layer altri_nomi" rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Modello-TCP-IP>Data-Link Layer</a> (assieme il protocollo Ethernet) ha il compito di eliminare il bisogno dei layer superiori (Network, Transport, Application) del bisogno di sapere quello che succede nel layer fisico e di che hardware è in uso. In questo modo i layer superiori <sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup> possono funzionare grossomodo in modo indipendente dalla connessione del dispositivo in funzione</p>
+<blockquote>
+<p>[!INFO]- Esempi
+Ad esempio il browser non ha bisogno di sapere se si è connessi per avviarsi</p>
+</blockquote>
+<blockquote>
+<p>[!NOTE]- CSMA/CD (Carrier Sense Multiple Access w/ Collision Detection)
+Protocollo di rete Ethernet (Layer 2), che risolve il problema dell <a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Alcuni-Dispositivi-di-Rete#^3b7c91 rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Alcuni-Dispositivi-di-Rete>Collision Domain</a> in reti utilizzanti l&rsquo;hub (o qualsiasi altro &ldquo;ripetitore&rdquo; del layer fisico).
+Il Protocollo determina quando i canali di comunicazioni sono liberi e quindi quando un dispositivo è libero di trasmettere i dati (<a href="/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Physical-Layer#Half Duplex" rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Physical-Layer>Half Duplex</a>)</p>
+</blockquote>
+<h2 id=mac-address-media-access-control--address>Mac Address (Media Access Control address):</h2>
+<p>Indirizzo univoco collegato a una singola interfaccia di rete (NIC, Network Interface Card)</p>
+<ul>
+<li>Formato da 48 Bit rappresentati solitamente da sei gruppi di numeri esadecimali
+#inserire_immagine</li>
+<li>Un altro modo di chiamare un gruppo dell&rsquo;indirizzo è Octet (Ottetto)
+<ul>
+<li><strong>Ottetto:</strong> Nelle reti di computer significa una qualsiasi cifra rappresentata da 8bit</li>
+</ul>
+</li>
+<li>Nel caso del Mac Address un ottetto viene rappresentato da 2 cifre Esadecimali</li>
+<li>248 possibili Mac Address</li>
+</ul>
+<blockquote>
+<p>[!INFO]- Esempio Mac address
+18-C0-4D-98-E3-38</p>
+</blockquote>
+<p>#inserire_immagine</p>
+<ul>
+<li>Primi 3 ottetti decisi dall&rsquo;OUI (Organizationally Unique Identifier)
+#inserire_immagine</li>
+<li>Ultimi 3 ottetti assegnati dal venditore della scheda di rete</li>
+</ul>
+<h2 id=trasmissione-unicast>Trasmissione Unicast:</h2>
+<p>#Unicast</p>
+<ul>
+<li>Pensata solo per un indirizzo ethernet<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup> di ricezione</li>
+<li>Se il bit meno significante del primo ottetto (il primo bit a partire da destra nell&rsquo;ottetto) è 0 significa che il frame è destinato solo all&rsquo;indirizzo di destinazione.
+#inserire_immagine</li>
+</ul>
+<h2 id=trasmissione-multicast>Trasmissione Multicast:</h2>
+<p>#Multicast</p>
+<ul>
+<li>SE il bit meno significante del primo ottetto è 1 significa che il frame è multicast, verrà accettato o scartato da ciascun dispositivo in base ai criteri indipendenti dal mac address (le interfacce di rete possono essere configurate per accettare elementi di indirizzi multicast)
+#inserire_immagine</li>
+</ul>
+<h2 id=trasmissione-broadcast-layer-2>Trasmissione Broadcast (Layer 2):</h2>
+<p>#Broadcast
+Una trasmissione internet Broadcast viene inviata a ogni singolo indirizzo u una LAN (nel caso del layer fisico).
+Eseguita attraverso un indirizzo speciale, il broadcast address.
+Usata in modo che i dispositivi possano ricevere prime informazioni l&rsquo;uno sull&rsquo;altro</p>
+<blockquote>
+<p>[!Note] ## Data Packet (pacchetto dati):
+#data_packet
+Viene così genericamente chiamato ogni singolo insieme di dati binari che attraversano un collegamento di rete.
+Non è legato a nessuna tecnologia in particolare, rappresenta solo un concetto di dati inviati da punto da punto A ad punto ^8meg81</p>
+</blockquote>
+<p>Un pacchetto di dati di livello 2 con uso dell&rsquo;Ethernet viene chiamato:</p>
+<h2 id=ethernet-frames>Ethernet Frames</h2>
+<p>#Ethernet_Frame #frame #Ethernet_Header
+Raccolta altamente strutturata di informazioni presentate in un ordine specifico. In questo modo possono convertire una stringa di bit in dati.
+Quasi tutte le sezioni di un frame ethernet sono obbligatorie e la maggior parte di essi ha quindi la stessa dimensione
+#inserire_immagine</p>
+<h3 id=ethernet-frames-fields>Ethernet Frames Fields:</h3>
+<p>#inserire_immagine</p>
+<ul>
+<li>
+<h3 id=campi-del-frame-ethernet-otqerp>Campi del Frame Ethernet: ^otqerp</h3>
+<ul>
+<li>Preamble (preambolo) [64 bit, 8 Byte]: Può essere diviso in 2 sezioni;
+<ul>
+<li>Un alternanza di 0 e di 1 che fanno da buffer e possono essere usati dalle interfacce di rete per sincronizzarsi i clock interni che usano per regolare la velocità di invio dati [56bit ,7Byte]</li>
+<li>SFD (Start Frame Delimiter) [8 bit, 1 Byte]: Segnala al dispositivo ricevente che il preambolo è finito e che ora seguirà il contenuto del frame</li>
+</ul>
+</li>
+<li>Destination (Mac address) Address [48 bit, 6 Byte]: Indirizzo hardware del dispositivo destinatario desiderato</li>
+<li>Source (Mac) Address [48 bit, 6 Byte]: Indirizzo hardware di dove il frame è stato generato</li>
+<li>Ether-Type [18 bit, 2 Byte]: usato per descrivere il protocollo del contenuto del frame
+<ul>
+<li>VLAN Header: si potrebbe trovare prima dell <a href=/quartz#VLAN rel=noopener class=internal-link data-src=/quartz>Ether-Type</a></li>
+</ul>
+</li>
+<li>Payload [Da 46 a 1500 byte]: In termini di &ldquo;rete&rdquo; sono gli effettivi dati trasportati, contiene tutti i dati provenienti dai livelli superiori <sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup> ^q8571z</li>
+<li>FCS (Frame Check Sequence) [32 bit, 4 Byte]: numero che rappresenta il valore Checksum dell&rsquo;intero frame. Il Checksum value è calcolato eseguendo un cyclical redundancy check rispetto al frame ^2cbeac</li>
+</ul>
+</li>
+</ul>
+<h2 id=cyclical-redundancy-check-crc>Cyclical Redundancy Check (CRC):</h2>
+<p>#CRC #Checksum #controllo_dati
+Concetto importante per l&rsquo;integrità dei dati (usato un po' ovunque nei computer).
+Trasformazione matematica che usa la divisione polinomiale per creare un numero che rappresenta un grande insieme di dati.
+Ogni volta che si esegue CRC contro i dati dovrebbe dovresti ottenere lo stesso Checksum number.
+Quando un dispositivo si prepara a inviare un frame colleziona tutte l informazioni (tutti i campi dell&rsquo;header) quindi esegue un CRC contro quei dati e allega il risultato come numero Checksum alla fine del frame ethernet nel <a href=/quartz#^2cbeac rel=noopener class=internal-link data-src=/quartz>FCS</a></p>
+<h2 id=vlan>VLAN</h2>
+<p>#VLAN
+Tecnica che permetti di avere più LAN logiche che operano sullo stesso equipaggiamento fisico. Ogni frame con il tag VLAN verrà solo consegnato da un interfaccia switch configurata per inoltrare questo specifico tag
+#inserire_immagine
+In questo modo è possibile avere solo una rete fisica che funziona come fossero LAN multiple. Vengono solitamente usate per separare diverse fonti di traffico</p>
+<h2 id=wi-fi-frame>WI-FI Frame</h2>
+<h3 id=wifi-frames-fields>WiFi Frames Fields</h3>
+<ul>
+<li>
+<p><strong>Frame Control</strong></p>
+<ul>
+<li>contiene un numero di sottocampi (subfields) usati per descrivere come il frame andrebbe processato (include la versione di 802.11 usata)</li>
+</ul>
+</li>
+<li>
+<p><strong>Duration Id</strong></p>
+<ul>
+<li>Specifica quanto è lungo in totale il frame WiFi così il ricevitore (destinatario) sa quanto a lungo deve ascoltare questa trasmissione</li>
+</ul>
+</li>
+<li>
+<p><strong>Source address</strong></p>
+<ul>
+<li>Mac address del dispositivo sorgente (inviante)</li>
+</ul>
+</li>
+<li>
+<p><strong>Intended Destination</strong></p>
+<ul>
+<li>Mac address di destinazione</li>
+</ul>
+</li>
+<li>
+<p><strong>Receiving address</strong></p>
+<ul>
+<li>Mac address dell&rsquo;access point che dovrebbe ricevere il frame (spesso è lo stesso di destinazione)</li>
+</ul>
+</li>
+<li>
+<p><strong>SCF (Sequence Control Field)</strong></p>
+<ul>
+<li>Principalmente contiene un numero di sequenza per tenere conto dell&rsquo;ordine dei frame</li>
+</ul>
+</li>
+<li>
+<p><strong>Transmitter address</strong></p>
+<ul>
+<li>Mac address di chiunque abbia appena trasmesso il frame (potrebbe essere lo stesso del source address)</li>
+</ul>
+</li>
+<li>
+<p><strong>Data Payload</strong></p>
+<ul>
+<li>Tutti i dati dei protocolli superiori</li>
+</ul>
+</li>
+<li>
+<p><strong>FCS (Frame Check Sequence)</strong></p>
+<ul>
+<li>contiene un checksum usato per un controllo ridondante (esattamente come quello <a href="/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Data-Link-Layer#Ethernet Frames Fields" rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Data-Link-Layer>ethernet</a>)</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>[!info]- Wireless Access Point (AP)
+!<a href="/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Alcuni-Dispositivi-di-Rete#Wireless Access Point" rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Alcuni-Dispositivi-di-Rete>Studio/It Support/Bits and Bytes of Networking/Alcuni Dispositivi di Rete</a></p>
+</blockquote>
+<hr>
+<section class=footnotes role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+<p>Network, Transport, Application&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:2 role=doc-endnote>
+<p>Diverso dal mac o IP?&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+</article>
+<hr>
+<div class=page-end>
+<div class=backlinks-container>
+<h3>Backlinks</h3>
+<ul class=backlinks>
+<li>
+<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/0.-Bits-and-Bytes-of-Networking-index>Untitled Page</a>
+</li>
+<li>
+<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Modello-TCP-IP>Untitled Page</a>
+</li>
+<li>
+<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/OSI-model>Untitled Page</a>
+</li>
+<li>
+<a href=/quartz/>🪴 Quartz 3.2</a>
+</li>
+</ul>
+</div>
+<div>
+<script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script>
+<h3>Interactive Graph</h3>
+<div id=graph-container></div>
+<style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style>
+<script src=https://redgunny.github.io/quartz/js/graph.27e8521c25c27c79dea35f434c486167.js></script>
+<script>drawGraph("https://redgunny.github.io/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Data-Link-Layer","https://redgunny.github.io/quartz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
+</div>
+</div>
+<div id=contact_buttons>
+<footer>
+<p>Made by Umberto Visentin using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p>
+<ul>
+<li><a href=/>Home</a></li>
+<li><a href=https://twitter.com>Twitter</a></li><li><a href=https://github.com/redgunny>Github</a></li></ul>
+</footer>
+</div>
+<script src=https://redgunny.github.io/quartz/js/popover.9d69dffc0f2d029ef30cf63230ccce4c.min.js></script>
+<script>initPopover("https://redgunny.github.io/quartz")</script>
+</div>
+</body>
+</html>

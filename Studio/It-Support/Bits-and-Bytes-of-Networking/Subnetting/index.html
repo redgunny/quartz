@@ -1,0 +1,238 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=description content="#reti #sottoreti #subnetting #subnetID #subnetMASK #Network_Layer #Network #IP
+Subnetting Il processo di suddivisione di prendere una rete più grande e dividerla in più piccole sotto-reti individuali.">
+<title>🪴 PROVA 3.2</title>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" type=image/png href=https://redgunny.github.io/quartz//icon.png>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
+<link href=https://redgunny.github.io/quartz/styles.2cc445b139f028853c48b809a0390863.min.css rel=stylesheet>
+<script src=https://redgunny.github.io/quartz/js/darkmode.46b07878b7f5d9e26ad7a3c40f8a0605.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
+<script>const BASE_URL="https://redgunny.github.io/quartz/",fetchData=Promise.all([fetch("https://redgunny.github.io/quartz/indices/linkIndex.1caac048f6d9af9813f281992614d3ee.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://redgunny.github.io/quartz/indices/contentIndex.c44c478d005c04eb0b3d41db853259b3.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-XYFD95KB4J',{anonymize_ip:!1})}</script>
+<body>
+<div id=search-container>
+<div id=search-space>
+<input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something...">
+<div id=results-container>
+</div>
+</div>
+</div>
+<script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://redgunny.github.io/quartz/js/search.bc849b857f2c1b822264d40635bb67b6.min.js></script>
+<div class=singlePage>
+<header>
+<h1 id=page-title><a href=https://redgunny.github.io/quartz/>🪴 PROVA 3.2</a></h1><svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+<div class=spacer></div>
+<div class=darkmode>
+<input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg>
+</label>
+<label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg>
+</label>
+</div>
+</header>
+<article>
+<p class=meta>
+Last updated April 5, 2022
+</p>
+<ul class=tags>
+</ul>
+<aside class=mainTOC>
+<details>
+<summary>Table of Contents</summary>
+<nav id=TableOfContents>
+<ol>
+<li><a href=#subnet-id>Subnet ID</a></li>
+<li><a href=#subnet-mask>Subnet Mask</a></li>
+<li><a href=#host-id-generalmente-riservati>Host ID generalmente &ldquo;riservati&rdquo;</a></li>
+<li><a href=#cidr-classless-inter-domain-routing>CIDR (Classless Inter-Domain Routing)</a></li>
+</ol>
+</nav>
+</details>
+</aside>
+<p>#reti #sottoreti #subnetting #subnetID #subnetMASK #Network_Layer #Network #IP</p>
+<h1 id=subnetting>Subnetting</h1>
+<p>Il processo di suddivisione di prendere una rete più grande e dividerla in più piccole sotto-reti individuali. Le sotto-reti avranno poi bisogno ognuna di un <a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting#^afaac9 rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting>Gateway Router</a> che faccia da ingresso e uscita per la subnet.</p>
+<blockquote>
+<p>[!NOTE]+ Gateway Router
+Il gateway router serve da punto di ingresso e uscita da una rete, gli serve l&rsquo;intero IP comprensivo di <a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting#^2g7zhu rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting>ID HOST</a> per inviare il datagramma al dispositivo desiderato
+^afaac9</p>
+</blockquote>
+<blockquote>
+<p>[!note]+ Core Router
+Invece un Core Router comunicherà principalmente solo con altri router
+Ai Core Router importa solo dell'<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting#^xc3loc rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting>ID di Rete</a> che usano per instradare il datagramma al giusto <a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting#^afaac9 rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting>Gateway Router</a> ^s4jvmg</p>
+</blockquote>
+<h2 id=subnet-id>Subnet ID</h2>
+<p>Un indirizzo IP viene diviso in 2 parti: ^gs8iaj</p>
+<ul>
+<li>Network ID (ID di rete): &ldquo;Pezzo&rdquo;, Frazione dell&rsquo;Indirizzo IP dell&rsquo;host che ci dice di che rete (o segmento di rete) fa parte servono principalmente ai <a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting#^s4jvmg rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting>Core Routers</a> ^xc3loc</li>
+<li>Host ID (ID dell&rsquo;Host): E' il pezzo di un indirizzo IP che riconosce unicamente l&rsquo;host su una specificata rete. Un host può comunicare direttamente con un altro host solamente se è nella stessa rete, sono necessari ai <a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting#^afaac9 rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting>Gateway Router</a> ^2g7zhu</li>
+</ul>
+<p>Visto che un singolo ottetto <a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting#^2g7zhu rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting>ID HOST</a> contenuti in essa</p>
+<p>Vengono &ldquo;calcolati&rdquo; tramite <a href="/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting#Subnet Mask" rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting>Subnet Mask</a> (maschera di sottorete)</p>
+<h2 id=subnet-mask>Subnet Mask</h2>
+<p>Numeri di 32 bit (come l&rsquo;IP) divisi in 4 ottetti e spesso rappresentata con 4 numeri decimali separati dal punto.
+Può essere indicata anche con il <a href="/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting#CIDR (Classless Inter-Domain Routing" rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting>Studio/It Support/Bits and Bytes of Networking/Subnetting</a>%7CCIDR)
+Si possono usare operatori <a href="/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Basic-Binary-Math#Operatore AND" rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Basic-Binary-Math>AND</a> per determinare se un indirizzo IP esiste sulla stessa rete
+#inserire_immagine</p>
+<h2 id=host-id-generalmente-riservati>Host ID generalmente &ldquo;riservati&rdquo;</h2>
+<ul>
+<li>
+<p>Come <a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting#^2g7zhu rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting>HOST ID</a> lo &ldquo;0&rdquo; (x.x.x.0) o equivalente non è generalmente usato.</p>
+</li>
+<li>
+<p>Mentre il &ldquo;255&rdquo; (x.x.x.255) o equivalente è riservato solitamente come indirizzo di Broadcast per la sottorete.</p>
+</li>
+</ul>
+<p>Questo ci indica che normalmente possiamo togliere 2 (-2) possibili indirizzi <a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting#^2g7zhu rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting>HOST</a></p>
+<blockquote>
+<p>[!example]- Esempio
+ad esempio la rete 192.168.1.0/24 userà come indirizzi <a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting#^2g7zhu rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting>HOST</a> solo quelli che vanno da &ldquo;1&rdquo; a 254 (255-2 ).
+Una rete 192.168.1.128/26 userà come <a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting#^2g7zhu rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting>HOST</a> solo quelli che vanno da &ldquo;129&rdquo; (lo zero qui &ldquo;equivale&rdquo; al 128) a 190 (il 191 qui &ldquo;equivale&rdquo; al 255 ovvero l&rsquo;indirizzo Broadcast"). La rete avrà quindi 64-2 (62) host disponibili</p>
+</blockquote>
+<blockquote>
+<p>[!attention]+ Attenzione
+Nonostante non siano usati come <a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting#^2g7zhu rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting>HOST ID</a> fanno comunque parte della sottorete</p>
+</blockquote>
+<h2 id=cidr-classless-inter-domain-routing>CIDR (Classless Inter-Domain Routing)</h2>
+<p>Le <a href="/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Network-Layer#Classi di Indirizzi IP IP Address classes" rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Network-Layer>Classi di Indirizzi IP</a> furono il primo tentativo di dividere gli IP globalmente disponibili con il <a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting>Studio/It Support/Bits and Bytes of Networking/Subnetting</a> introdotto quando divenne chiaro che le classi non fossero efficienti.
+Con le <a href="/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Network-Layer#Classi di Indirizzi IP IP Address classes" rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Network-Layer>Classi di Indirizzi IP</a> l'<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting#^xc3loc rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting>ID di Rete</a> era sempre limitato dagli ottetti che andavano usati per intero, senza la possibilità di dividere un singolo ottetto in più (sotto)reti.</p>
+<p>Il <a href="/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting#CIDR (Classless Inter-Domain Routing" rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting>Studio/It Support/Bits and Bytes of Networking/Subnetting</a>%7CCIDR) entra qui in gioco, permettendo di riservare singoli bit in un ottetto (invece che l&rsquo;ottetto intero) come <a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting#^xc3loc rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting>ID di Rete</a></p>
+<p>Ovvero permette una nuova notazione della maschera di rete attraverso uno &ldquo;/&rdquo; (slash) dopo l&rsquo;indirizzo IP che indica quanti bit complessivi sono dedicati all'<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting#^xc3loc rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting>ID di Rete</a></p>
+<table>
+<thead>
+<tr>
+<th>Netmask equivalente</th>
+<th>CIDR notation</th>
+<th>Class</th>
+<th>&ldquo;Age&rdquo;</th>
+<th>Host Disponibili per rete</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>255.0.0.0</td>
+<td>/8</td>
+<td>A</td>
+<td>&ldquo;Old&rdquo;</td>
+<td>16777214</td>
+</tr>
+<tr>
+<td>255.255.0.0</td>
+<td>/16</td>
+<td>B</td>
+<td>&ldquo;Old&rdquo;</td>
+<td>65534</td>
+</tr>
+<tr>
+<td>255.255.255.0</td>
+<td>/24</td>
+<td>C</td>
+<td>&ldquo;Old&rdquo;</td>
+<td>254</td>
+</tr>
+<tr>
+<td>255.255.240.0</td>
+<td>/20</td>
+<td>&ldquo;CIDR&rdquo;</td>
+<td>&ldquo;New&rdquo;</td>
+<td>4094</td>
+</tr>
+<tr>
+<td>255.255.255.128</td>
+<td>/25</td>
+<td>&ldquo;CIDR&rdquo;</td>
+<td>&ldquo;New&rdquo;</td>
+<td>126</td>
+</tr>
+<tr>
+<td>255.255.255.248</td>
+<td>/29</td>
+<td>&ldquo;CIDR&rdquo;</td>
+<td>&ldquo;New&rdquo;</td>
+<td>6</td>
+</tr>
+<tr>
+<td>224.0.0.0</td>
+<td>/3</td>
+<td>&ldquo;CIDR&rdquo;</td>
+<td>&ldquo;New&rdquo;</td>
+<td>536870910</td>
+</tr>
+</tbody>
+</table>
+<p>Per capire in che <a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting#^xc3loc rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting>ID di Rete</a> &ldquo;risiede&rdquo; un indirizzo host si può usare la <a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Basic-Binary-Math rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Basic-Binary-Math>Studio/It Support/Bits and Bytes of Networking/Basic Binary Math</a> &ldquo;comparando&rdquo; l&rsquo;IP scelto con la maschera di <a href="/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting#Subnet Mask" rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting>maschera di sottorete</a> scelta</p>
+<blockquote>
+<p>[!tip]-
+In pratica per ogni bit che verrà &ldquo;impostato&rdquo; come <a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting#^xc3loc rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting>ID di Rete</a> si andrà a indicare un&rsquo;intervallo normalmente dedicato agli indirizzi finali (0-255) in più sottoreti.</p>
+<ul>
+<li>Se prendo il primo bit da sinistra avrò: 255 diviso 2 reti
+<ul>
+<li>Ovvero una rete da 0~127</li>
+<li>E una rete da 128~255</li>
+</ul>
+</li>
+<li>Se prendo il primi DUE bit da sinistra avrò 255 diviso 4 reti
+<ul>
+<li>Ovvero Una rete da 0~63</li>
+<li>Una rete da 64~127</li>
+<li>Una rete da 128~191</li>
+<li>Una rete da 191~255
+Essendo Reti diverse un host 192.1.1.54/26 e un host 192.1.1.91/26 non potranno comunicare se non attraverso un router
+Un host 192.1.1.150 e un host 192.1.1.190 invece potranno comunicare direttamente (possibile tramite <a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Alcuni-Dispositivi-di-Rete#Switch rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Alcuni-Dispositivi-di-Rete> Switch</a>)</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>!<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Demarcation-Point rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Demarcation-Point>Studio/It Support/Bits and Bytes of Networking/Demarcation Point</a></p>
+</article>
+<hr>
+<div class=page-end>
+<div class=backlinks-container>
+<h3>Backlinks</h3>
+<ul class=backlinks>
+<li>
+<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/0.-Bits-and-Bytes-of-Networking-index>Untitled Page</a>
+</li>
+<li>
+<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Network-Layer>Untitled Page</a>
+</li>
+<li>
+<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting>Untitled Page</a>
+</li>
+<li>
+<a href=/quartz/>🪴 Quartz 3.2</a>
+</li>
+</ul>
+</div>
+<div>
+<script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script>
+<h3>Interactive Graph</h3>
+<div id=graph-container></div>
+<style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style>
+<script src=https://redgunny.github.io/quartz/js/graph.27e8521c25c27c79dea35f434c486167.js></script>
+<script>drawGraph("https://redgunny.github.io/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting","https://redgunny.github.io/quartz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
+</div>
+</div>
+<div id=contact_buttons>
+<footer>
+<p>Made by Umberto Visentin using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p>
+<ul>
+<li><a href=/>Home</a></li>
+<li><a href=https://twitter.com>Twitter</a></li><li><a href=https://github.com/redgunny>Github</a></li></ul>
+</footer>
+</div>
+<script src=https://redgunny.github.io/quartz/js/popover.9d69dffc0f2d029ef30cf63230ccce4c.min.js></script>
+<script>initPopover("https://redgunny.github.io/quartz")</script>
+</div>
+</body>
+</html>
