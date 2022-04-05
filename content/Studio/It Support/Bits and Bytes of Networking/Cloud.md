@@ -16,7 +16,7 @@ Permette il concetto di macchina fisica (physical machine/bare metal) e macchina
 # Virtualization
 Una macchina fisica chiamata host, può eseguire molte istanze virtuali chiamate guest.
 
-Piattaforme di [[Cloud#Hardware Virtualization|virtualizzazione hardware]] fanno uso di un software chiamato **hypervisor**
+Piattaforme di [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Cloud.md#Hardware%20Virtualization%7Cvirtualizzazione%20hardware) fanno uso di un software chiamato **hypervisor**
 
 ## Hypervisor
 Un software (host) che esegue e gestisce macchine virtuali (VM, Virtual Machines) nel mentre offrendo a questi guest una piattaforma operativa virtuale indistinguibile dal vero hardware (ad esempio un sistema operativo virtualizzato penserà di essere il solo ed al comando e penserà che l'hardware sia vero)
@@ -50,12 +50,12 @@ Termine usato per descrivere situazioni dove le compagnie potrebbero tenere le p
 
 ---
 
-![[infrastructure-as-a-service-iaas-800x435-1 1.webp]]
+![infrastructure-as-a-service-iaas-800x435-1 1](Studio/Materiali/infrastructure-as-a-service-iaas-800x435-1%201.webp)
 ## Infrastructure as a Service (IaaS)
 L'idea è che non devi stare a preoccuparti di costruire la tua rete o costruire il tuo server, paghi invece qualcun altro per farlo
 
 ## Platform as a Service (PaaS)
-Sottoinsieme del [[Cloud#Cloud Computing|cloud computing]] dove una piattaforma è fornita ai clienti per eseguire i propri servizi. Ciò significa che un execution engine è provvisto per qualunque software a chiunque potrebbe volere eseguire tale software
+Sottoinsieme del [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Cloud.md#Cloud%20Computing%7Ccloud%20computing) dove una piattaforma è fornita ai clienti per eseguire i propri servizi. Ciò significa che un execution engine è provvisto per qualunque software a chiunque potrebbe volere eseguire tale software
 
 >[!example]+
 >Ad esempio un web dev non ha bisogno di un server intero, ha bisogno solo di un ambiente in cui poter eseguire le proprie app

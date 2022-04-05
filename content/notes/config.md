@@ -49,11 +49,11 @@ More info about partials on [Hugo's website.](https://gohugo.io/templates/partia
 Still having problems? Checkout our [FAQ and Troubleshooting guide](notes/troubleshooting.md).
 
 ## Multilingual
-[CJK + Latex Support (测试)](notes/CJK%20+%20Latex%20Support%20(测试).md) comes out of the box with Quartz.
+[CJK + Latex Support (测试)](%E6%B5%8B%E8%AF%95)).md) comes out of the box with Quartz.
 
 Want to support languages that read from right-to-left (like Arabic)? Hugo (and by proxy, Quartz) supports this natively.
 
-Follow the steps [Hugo provides here](https://gohugo.io/content-management/multilingual/#configure-languages) and modify your `config.toml`
+Follow the steps [](https://gohugo.io/content-management/multilingual/#configure-languages) and modify your `config.toml`
 
 For example:
 

@@ -1,13 +1,13 @@
 #reti #routing #router #Network_Layer 
-![[Alcuni Dispositivi di Rete#Routing Router]]
+![](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Alcuni%20Dispositivi%20di%20Rete.md#Routing%20Router)
 
 ## Basic Routing
 Detto semplicemente:
-1. router "A" riceve un [[Data-Link Layer#^8meg81|pacchetto dati]]
-2. Esamina i pacchetti dei layer inferiori, de-capsulandoli fino a raggiungere il  datagramma IP ([[Network Layer]])  
+1. router "A" riceve un [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Data-Link%20Layer.md#^8meg81%7Cpacchetto%20dati)
+2. Esamina i pacchetti dei layer inferiori, de-capsulandoli fino a raggiungere il  datagramma IP ([Network Layer](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Network%20Layer.md))  
 3. Esamina l'IP di di destinazione
 4. Cerca IP nella sua routing table (tabella routing)
-5. Il router inoltra il traffico verso la destinazione tramite l'interfaccia più vicina alla destinazione, incapsulando il datagramma in un nuovo Frame Data-Link e inviandolo sul [[Physical Layer]]
+5. Il router inoltra il traffico verso la destinazione tramite l'interfaccia più vicina alla destinazione, incapsulando il datagramma in un nuovo Frame Data-Link e inviandolo sul [Physical Layer](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Physical%20Layer.md)
 #inserire_immagine 
 
 ## Tabella di Routing
@@ -20,7 +20,7 @@ La più basica delle tabelle di routing avrà minimo 4 colonne:
 | default                                                                                                                                                                                                            | 0.0.0.0/0                                                                                                                                                                              | 0                                                          | eth0                                                                 |
 | 192.25.67.0/24                                                                                                                                                                                                     | 10.0.0.3                                                                                                                                                                               | 6                                                         | eth5                                                                     |
 |                                                                                                                                                                                                                    |                                                                                                                                                                                        |                                                            |                                                                      |
-![[routingtable_entry-1.drawio.svg]]![[routingtable_entry2.drawio.svg]]![[routingtable_entry3.drawio.svg]]
+![routingtable_entry-1.drawio](Studio/Materiali/routingtable_entry-1.drawio.svg)![routingtable_entry2.drawio](Studio/Materiali/routingtable_entry2.drawio.svg)![routingtable_entry3.drawio](Studio/Materiali/routingtable_entry3.drawio.svg)
 
 ---
 
@@ -29,20 +29,20 @@ La più basica delle tabelle di routing avrà minimo 4 colonne:
 Modo per i router di imparare cosa gli circonda, protocolli speciali che i router usano per comunicare fra di loro condividendo informazioni, si possono dividere in 2 principali categorie:
 
 ### Interior Gateway Protocol
-Usato dai router per condividere informazioni all'interno di un [[Autonomous System|Sistema Autonomo]] (autonomous system) condiviso dai routers.
+Usato dai router per condividere informazioni all'interno di un [Sistema Autonomo](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Autonomous%20System.md) (autonomous system) condiviso dai routers.
 ##### Protocolli usati:
-- Link-State protocol: Ogni router del  [[Autonomous System|Sistema Autonomo]] pubblicizza lo stato delle sue interfacce tramite algoritmo
+- Link-State protocol: Ogni router del  [Sistema Autonomo](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Autonomous%20System.md) pubblicizza lo stato delle sue interfacce tramite algoritmo
   #inserire_immagine 
-- Distance Vector protocol: Vecchio standard. Il router condivide la propria [[Routing#Tabella di Routing|routing table]] con i router a cui è collegato. Così facendo condivide informazioni solo con i suoi vicini
+- Distance Vector protocol: Vecchio standard. Il router condivide la propria [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Routing.md#Tabella%20di%20Routing%7Crouting%20table) con i router a cui è collegato. Così facendo condivide informazioni solo con i suoi vicini
 - #inserire_immagine 
 
 ### Exterior Gateway Protocol
-Usato dai router per comunicare dati tra router ai [[Demarcation Point|bordi]] dei [[Autonomous System|Sistemi Autonomi]]
+Usato dai router per comunicare dati tra router ai [bordi](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Demarcation%20Point.md) dei [Sistemi Autonomi](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Autonomous%20System.md)
 
 
 ## 
 >[!note]+  Iana e ASN
->Lo IANA (Internet Assigned Numbers Authority) oltre che a gestire gli indirizzi IP si occupa anche di assegnare gli ASN (Autonomous System Number). Gli ASN sono numeri assegnati ai vari [[Autonomous System|Sistemi Autonomi]] individuali.
+>Lo IANA (Internet Assigned Numbers Authority) oltre che a gestire gli indirizzi IP si occupa anche di assegnare gli ASN (Autonomous System Number). Gli ASN sono numeri assegnati ai vari [Sistemi Autonomi](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Autonomous%20System.md) individuali.
 >Formati da 32bit gli ASN vengono rappresentati con un intero numero decimale preceduto dalla sigla "AS".
 > - **Ad esempio** AS19604 è assegnato a IBM.
 >
@@ -54,16 +54,16 @@ Questo perché non ogni computer connesso ad internet ha bisogno (o dovrebbe) di
 
 Potrebbe sembrare limitante ma poi con il 
 #### NAT (Network Address translation)
-Risolve il limite degli indirizzi non instradabili, permettendo a dispositivi con [[Routing#Non Routable Address Space|non routable address]] di comunicare con gli altri dispositivi su internet 
+Risolve il limite degli indirizzi non instradabili, permettendo a dispositivi con [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Routing.md#Non%20Routable%20Address%20Space%7Cnon%20routable%20address) di comunicare con gli altri dispositivi su internet 
 
-L'[[Routing#^7f7kkr|RFC]] 1918 definì un numero di reti come non-routable (non instradabili):
+L'[](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Routing.md#^7f7kkr%7CRFC) 1918 definì un numero di reti come non-routable (non instradabili):
 >[!note]- RFC (Request For Comment)
 >L'RFC è un modo per mettere d'accordo i responsabili di mantenere internet tramite requisiti standard
 >
 > ^7f7kkr
 
-Questi indirizzi potranno essere instradati solo da protocolli [[Routing#Interior Gateway Protocol|gateway interni]]
-| [[Routing#Non Routable Address Space\|non routable address spaces]] |     |
+Questi indirizzi potranno essere instradati solo da protocolli [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Routing.md#Interior%20Gateway%20Protocol%7Cgateway%20interni)
+| [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Routing.md#Non%20Routable%20Address%20Space%5C%7Cnon%20routable%20address%20spaces) |     |
 | ------------------------------------------------------------------- | --- |
 | 10.0.0.0/8                                                          | Interior Gateway Protocol    | 
 | 172.16.0.0/12                                                       |   Interior Gateway Protocol  |

@@ -7,7 +7,7 @@ Still having trouble? Here are a list of common questions and problems people en
 While you're here, join our [Discord](https://discord.gg/cRFFHYye7t) :)
 
 ### Does Quartz have Latex support?
-Yes! See [CJK + Latex Support (测试)](notes/CJK%20+%20Latex%20Support%20(测试).md) for a brief demo.
+Yes! See [CJK + Latex Support (测试)](%E6%B5%8B%E8%AF%95)).md) for a brief demo.
 
 ### Can I use \<Obsidian Plugin\> in Quartz?
 Unless it produces direct Markdown output in the file, no. There currently is no way to bundle plugin code with Quartz.
@@ -15,7 +15,7 @@ Unless it produces direct Markdown output in the file, no. There currently is no
 The easiest way would be to add your own HTML partial that supports the functionality you are looking for.
 
 ### My GitHub pages is just showing the README and not Quartz
-Make sure you set the source to deploy from `master` (and not `hugo`) using `/ (root)`! See more in the [hosting](/notes/hosting) guide
+Make sure you set the source to deploy from `master` (and not `hugo`) using `/ (root)`! See more in the [hosting](notes/hosting.md) guide
 
 ### Some of my pages have 'January 1, 0001' as the last modified date
 This is a problem caused by `git` treating files as case-insensitive by default and some of your posts probably have capitalized file names. You can turn this off in your Quartz by running this command.

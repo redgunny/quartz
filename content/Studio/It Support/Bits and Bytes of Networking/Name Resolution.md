@@ -1,11 +1,11 @@
-[[Servizi di Rete]]
+[Servizi di Rete](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Servizi%20di%20Rete.md)
 #reti 
 # Name Resolution
 >[!note]- ICANN
 > Internet Corporation for Assigned Names and Numbers. Organizzazione sorella dello IANA, assieme controllano gli indirizzi IP  globali e i sistemi DNS  globali
 
 >[!note] Registrar
->Compagnia che ha un accordo con ICANN per vendere [[Name Resolution#Domain name nome di dominio|nomi dominio]] ancora non registrati
+>Compagnia che ha un accordo con ICANN per vendere [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#Domain%20name%20nome%20di%20dominio%7Cnomi%20dominio) ancora non registrati
 >Organizzazione responsabile per l'assegnazione di nomi dominio individuali ad altre organizzazioni o individui, le assegnazioni scadono dopo un certo periodo (solitamente un anno) e vanno rinnovate ^al2xn7
 
 
@@ -24,7 +24,7 @@ Nell'esempio, google.it, come qualsiasi sito Web, ha un indirizzo IP, ed è quel
 >[!info]-
 >Chiamati anche nomi DNS
 
-Termine per qualcosa che può essere "risolto" (tradotto) dal [[Name Resolution#DNS Domain Name System|DNS]], costruito da una serie di stringhe (testo) separate da punti.
+Termine per qualcosa che può essere "risolto" (tradotto) dal [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#DNS%20Domain%20Name%20System%7CDNS), costruito da una serie di stringhe (testo) separate da punti.
 
 In generale un Nome dominio rappresenta uno (o più) IP, ad esempio un computer utilizzato per accedere ad internet (Host), un server che ospita un sito web o il sito stesso, oppure qualsiasi altro servizio comunicato tramite internet.
 >[!example]- esempi vari
@@ -39,11 +39,11 @@ In generale un Nome dominio rappresenta uno (o più) IP, ad esempio un computer 
 >academyrapido.eduflow.com
 >www.academyrapido.com
 
-Usando il [[Name Resolution#DNS Domain Name System|DNS]] un organizzazione o un individuo può cambiare in quale IP il proprio [[Name Resolution#Domain name nome di domini|dominio]]
+Usando il [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#DNS%20Domain%20Name%20System%7CDNS) un organizzazione o un individuo può cambiare in quale IP il proprio [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#Domain%20name%20nome%20di%20domini%7Cdominio)
 
 Il DNS permette anche di tradurre un nome dominio in IP in base alla regione in cui si trova il client
 #### Anatomia di un nome dominio
-DNS può supportare fino a 127 livelli di dominio per il totale di un singolo [[Name Resolution#Fully Qualified Domain Name FQDN|FQDN]] con al massimo 255 caratteri totali, ogni sezione dominio può avere massimo 63 caratteri
+DNS può supportare fino a 127 livelli di dominio per il totale di un singolo [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#Fully%20Qualified%20Domain%20Name%20FQDN%7CFQDN) con al massimo 255 caratteri totali, ogni sezione dominio può avere massimo 63 caratteri
 
 
 ##### Fully Qualified Domain Name (FQDN)
@@ -52,8 +52,8 @@ Chiamato anche "Absolute domain name"
 Ha minimo 3 parti ognuna con un scopo specifico, è la stringa completa che si andrà a digitare nella barra degli indirizzi. E' composto da tutti i domini presenti
 
 
-![[FQDN.excalidraw]]
-Un nome a dominio pienamente qualificato ([[Name Resolution#Fully Qualified Domain Name FQDN|FQDN]]) si distingue per la sua mancanza di ambiguità: può essere interpretato solo in un modo
+![FQDN.excalidraw](Studio/Excalidraw/FQDN.excalidraw.md)
+Un nome a dominio pienamente qualificato ([](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#Fully%20Qualified%20Domain%20Name%20FQDN%7CFQDN)) si distingue per la sua mancanza di ambiguità: può essere interpretato solo in un modo
 
 ##### Root Zone
 In cima alla gerarchia, rappresentata semplicemente da un punto ("."), solitamente si può omettere ma in alcuni casi potrebbe essere richiesto
@@ -63,7 +63,7 @@ Dominio di primo livello, ogni server è responsabile per un TLD diverso (.com, 
 "padre" del dominio di secondo livello
 
 ##### Dominio di secondo livello (SLD)
-Chiamato generalmente dominio, è "figlio" del [[Name Resolution#TLD Top Level Domain|TLD]], ovvero è la parte che lo precede. (sottodominio del [[Name Resolution#TLD Top Level Domain|TLD]]), "padre" del sottodominio.
+Chiamato generalmente dominio, è "figlio" del [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#TLD%20Top%20Level%20Domain%7CTLD), ovvero è la parte che lo precede. (sottodominio del [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#TLD%20Top%20Level%20Domain%7CTLD)), "padre" del sottodominio.
 
 ##### Sottodominio (dominio dal terzo livello in poi)
 Parte di un altro dominio, "figlio" del dominio superiore, si possono avere un sacco di sottodomini
@@ -76,12 +76,12 @@ Parte di un altro dominio, "figlio" del dominio superiore, si possono avere un s
 
 
 ### TTL
-Tutti i nomi di dominio nel sistema DNS globale hanno un TTL, valore in secondi configurabile dal proprietario del dominio, di quanto a lungo un server (ad esempio un [[Name Resolution#^t0l6w4|server cache]]) possa tenere in cache la traduzione domino=>IP prima di effettuare di nuova una resolution name request e re-immagazzinare l'associazione dominio=IP.
+Tutti i nomi di dominio nel sistema DNS globale hanno un TTL, valore in secondi configurabile dal proprietario del dominio, di quanto a lungo un server (ad esempio un [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#^t0l6w4%7Cserver%20cache)) possa tenere in cache la traduzione domino=>IP prima di effettuare di nuova una resolution name request e re-immagazzinare l'associazione dominio=IP.
 
 ### Tipi di server DNS
 Ci sono principalmente 5 tipi di server DNS
 
-1. **Caching Name Resolver**: generalmente forniti dagli ISP. il loro scopo è di immagazzinare un [[Name Resolution#Domain name nome di dominio|nome dominio]] conosciuto per un periodo di tempo, permette di tenere pronti i nomi più utilizzati senza ogni volta avviare una ricerca  ^t0l6w4
+1. **Caching Name Resolver**: generalmente forniti dagli ISP. il loro scopo è di immagazzinare un [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#Domain%20name%20nome%20di%20dominio%7Cnome%20dominio) conosciuto per un periodo di tempo, permette di tenere pronti i nomi più utilizzati senza ogni volta avviare una ricerca  ^t0l6w4
 
 2. **Recursive Name server**: Esegue una Full DNS Resolution Request (DNS Lookup) ^j1msyp
 
@@ -93,13 +93,13 @@ Ci sono principalmente 5 tipi di server DNS
 
 ### Full Resolution Name Request/DNS Lookup/DNS Request
 - Step da parte del Caching Name resolver/Recursive Name Server
-	1. Contattare [[Name Resolution#^frmrvu|root name server]]
-	2. Risposta con quale [[Name Resolution#^fd92gq|TLD name server]] da contattare (quale TLD interrogare)
-	3. Query [[Name Resolution#^fd92gq|TLD name server]], per ogni TLD in esistenza esiste "un" suo TLD server
-	4. Risposta da parte del TLD con il nome dell'[[Name Resolution#^a6447k|Authoritative server]] da contattare
-	5. Query delle ultime parti del nome dominio dell'[[Name Resolution#^a6447k|Authoritative server]] 
-	6. Risposta da parte dell'[[Name Resolution#^a6447k|Authoritative server]] con l'indirizzo IP associato al dominio
-	7. Immagazzinare nella cache del [[Name Resolution#^t0l6w4|server cache]] l'abbinamento IP e dominio (alla scadenza in caso di richiesta DNS il processo dovrà essere ripetuto da capo)
+	1. Contattare [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#^frmrvu%7Croot%20name%20server)
+	2. Risposta con quale [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#^fd92gq%7CTLD%20name%20server) da contattare (quale TLD interrogare)
+	3. Query [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#^fd92gq%7CTLD%20name%20server), per ogni TLD in esistenza esiste "un" suo TLD server
+	4. Risposta da parte del TLD con il nome dell'[](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#^a6447k%7CAuthoritative%20server) da contattare
+	5. Query delle ultime parti del nome dominio dell'[](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#^a6447k%7CAuthoritative%20server) 
+	6. Risposta da parte dell'[](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#^a6447k%7CAuthoritative%20server) con l'indirizzo IP associato al dominio
+	7. Immagazzinare nella cache del [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#^t0l6w4%7Cserver%20cache) l'abbinamento IP e dominio (alla scadenza in caso di richiesta DNS il processo dovrà essere ripetuto da capo)
 
 Assicurarsi che le risoluzioni DNS passino attraverso una serie di lookup regolamentati e controllati in modo da ottenere risposte corrette è il modo migliore di proteggersi
 
@@ -108,9 +108,9 @@ Assicurarsi che le risoluzioni DNS passino attraverso una serie di lookup regola
 >	1. Caching Name server/Recursive Name Server: Root server quale IP ha www.wikipedia.org??
 >	2. Root server: Devi contattare il server TLD .org
 >	3. Caching Name server/Recursive Name Server: Server TLD del .org che IP ha www.wikipedia.org ??
->	4. .org TLD: devi contattare il [[Name Resolution#^a6447k|Authoritative server]] di www.wikipedia
->	5. Caching Name server/Recursive Name Server: [[Name Resolution#^a6447k|Authoritative server]] di www.wikipedia  che indirizzo IP ha www.wikipedia.org??
->	6.  [[Name Resolution#^a6447k|Authoritative server]]  di www.wikipedia: controllo i miei resource records di www.wikipedia.com ........ che ha come indirizzo IP 208.80.154.224
+>	4. .org TLD: devi contattare il [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#^a6447k%7CAuthoritative%20server) di www.wikipedia
+>	5. Caching Name server/Recursive Name Server: [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#^a6447k%7CAuthoritative%20server) di www.wikipedia  che indirizzo IP ha www.wikipedia.org??
+>	6.  [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#^a6447k%7CAuthoritative%20server)  di www.wikipedia: controllo i miei resource records di www.wikipedia.com ........ che ha come indirizzo IP 208.80.154.224
 >	7. Caching Name server/Recursive Name Server: Mi salvo l'abbinamento www.wikipedia.org con IP 208.80.154.224 .. per 24 ore (deciso dai possessori di Wikipedia)
 
 ### Resource Records Types
@@ -118,10 +118,10 @@ Il DNS opera con un set si resource record types definiti, questi permettono a t
 
 Ci sono dozzine di resource records types definiti i più comuni sono:
 #### A Record
-Usato per associare un determinato domain name a un determinato IP address. Nel suo uso più basico è configurato per un nome di dominio singolo, ma è possibile per un singolo nome di dominio avere multipli **A Record**. Questo gli permette di usare una tecnica chiamata [[DNS Round Robin]] 
+Usato per associare un determinato domain name a un determinato IP address. Nel suo uso più basico è configurato per un nome di dominio singolo, ma è possibile per un singolo nome di dominio avere multipli **A Record**. Questo gli permette di usare una tecnica chiamata [DNS Round Robin](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/DNS%20Round%20Robin.md) 
 #inserire_immagine 
 #### AAAA Record (Quad A)
-Molto simile all'[[Name Resolution#A Record|A record]] solo che restituisce un indirizzo IPv6 invece che IPv4
+Molto simile all'[](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#A%20Record%7CA%20record) solo che restituisce un indirizzo IPv6 invece che IPv4
 #inserire_immagine 
 #### CName Record (Canonical Name)
 Usato per reindirizzare il traffico da un nome dominio all'altro
@@ -134,7 +134,7 @@ Indica a quali server debba essere inviata la posta elettronica per un certo dom
 
 #inserire_immagine 
 #### SRV Record (Service)
-Simile al [[Name Resolution#MX Record Mail eXchange|MX record]] usato per definire la posizione di servizi specifici. Ha lo stesso scopo del server MX eccetto per un caso; mentre [[Name Resolution#MX Record Mail eXchange|MX record]] è solo per servizi mail un SRV record può essere definito per restituire le specifiche di molti tipi di servizi diversi
+Simile al [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#MX%20Record%20Mail%20eXchange%7CMX%20record) usato per definire la posizione di servizi specifici. Ha lo stesso scopo del server MX eccetto per un caso; mentre [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#MX%20Record%20Mail%20eXchange%7CMX%20record) è solo per servizi mail un SRV record può essere definito per restituire le specifiche di molti tipi di servizi diversi
 
 Identificano il _server_ per un determinato servizio all'interno di un dominio. Possono essere considerati una generalizzazione dei record MX.
 
@@ -159,7 +159,7 @@ Delega una zona DNS ad essere gestita da un server DNS autorevole per quel nome 
 
 
 #### PTR Record (PoinTer Resource)
-Da un IP risolve un nome dominio, grazie al [[Name Resolution#Reverse Lookup Zone File|Reverse Lookup Zone File]]
+Da un IP risolve un nome dominio, grazie al [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#Reverse%20Lookup%20Zone%20File%7CReverse%20Lookup%20Zone%20File)
 
 
 --- 
@@ -167,35 +167,35 @@ Da un IP risolve un nome dominio, grazie al [[Name Resolution#Reverse Lookup Zon
 
 
 ### DNS Zones
-Concetto gerarchico in cui uno specificato server è responsabile per una [[Name Resolution#DNS Zones|Zona DNS]] 
+Concetto gerarchico in cui uno specificato server è responsabile per una [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#DNS%20Zones%7CZona%20DNS) 
 | Server dns                                             | Zona responsabilità                                                  |
 | ------------------------------------------------------ | -------------------------------------------------------------------- |
-| [[Name Resolution#^frmrvu\|root name server]]          | root zone                                                            |
-| [[Name Resolution#^fd92gq\|TLD name server]]           | ogni TLD è responsabile per la sua specifica zona (.org, .com, .etc) |
-| [[Name Resolution#^a6447k\|Authoritative name server]] | Responsabile di zone più dettagliate al disotto, ognuno avrà il suo dominio e sottodomini (www.google,it.wikipedia)                      |                                                                     |
+| [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#^frmrvu%5C%7Croot%20name%20server)          | root zone                                                            |
+| [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#^fd92gq%5C%7CTLD%20name%20server)           | ogni TLD è responsabile per la sua specifica zona (.org, .com, .etc) |
+| [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#^a6447k%5C%7CAuthoritative%20name%20server) | Responsabile di zone più dettagliate al disotto, ognuno avrà il suo dominio e sottodomini (www.google,it.wikipedia)                      |                                                                     |
 
 Hanno lo scopo di permettere un più semplice controllo su livelli multipli di un dominio
 ![](https://i.imgur.com/wIOXxjg.png)
 #### Zone Files
 Semplici file di configurazione che dichiarano tutti i resource records per una zona in particolare
-![[Name Resolution#SoA Record Start of Authority]]
+![](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#SoA%20Record%20Start%20of%20Authority)
 
 ##### Reverse Lookup Zone File
-Permettono ai DNS resolver di fornire un indirizzo IP e ottenere il [[Name Resolution#Fully Qualified Domain Name FQDN|FQDN]] di un dominio
+Permettono ai DNS resolver di fornire un indirizzo IP e ottenere il [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#Fully%20Qualified%20Domain%20Name%20FQDN%7CFQDN) di un dominio
 
 
 
 
 ### DNS e UDP
-DNS è un ottimo esempio di un servizio dell'[[Application Layer]] che nel [[Transport Layer]] utilizza il protocollo [[Transport Layer#Connectionless protocols|UDP]] invece che TCP
+DNS è un ottimo esempio di un servizio dell'[Application Layer](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Application%20Layer.md) che nel [Transport Layer](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Transport%20Layer.md) utilizza il protocollo [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Transport%20Layer.md#Connectionless%20protocols%7CUDP) invece che TCP
 
-Una singola [[Name Resolution#Full Resolution Name Request DNS Lookup DNS Request|richiesta DNS]] e la sua risposta può solitamente essere contenuta in un singolo datagramma UDP, rendendola la candidata ideale per tale protocollo.
+Una singola [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#Full%20Resolution%20Name%20Request%20DNS%20Lookup%20DNS%20Request%7Crichiesta%20DNS) e la sua risposta può solitamente essere contenuta in un singolo datagramma UDP, rendendola la candidata ideale per tale protocollo.
 
 Vale anche la pena dire che il DNS può generare un sacco di traffico
 
-L'UDP è ideale anche perché un [[Name Resolution#Tipi di server DNS|server DNS]] non deve fare nulla solo rispondere alle richieste di lookup in arrivo.
+L'UDP è ideale anche perché un [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#Tipi%20di%20server%20DNS%7Cserver%20DNS) non deve fare nulla solo rispondere alle richieste di lookup in arrivo.
 
-Un [[Name Resolution#^j1msyp|DNS resolver]] ha il semplice bisogno di effettuare lookups e ripeterli se non hanno successo.
+Un [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#^j1msyp%7CDNS%20resolver) ha il semplice bisogno di effettuare lookups e ripeterli se non hanno successo.
 
 ---
 
@@ -207,11 +207,11 @@ Ogni tanto le organizzazioni usano DNS privati internamente in modo da associare
 >Assegnare alla stampante 192.168.1.45 il nome stampante.ufficio in modo da usare quel nome invece che digitare l'ip
 
 ## DNS as a Service
-![[Name Resolution#^al2xn7]]
+![](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#^al2xn7)
 ### Public DNS Server
 Name server specificatamente impostati in modo che chiunque possa usarli, gratuitamente.
 
-La maggioranze dei DNS pubblici risponde agli [[Troubleshooting Networks#ICMP Internet Control Message Protocol|ICMP message]] 
+La maggioranze dei DNS pubblici risponde agli [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Troubleshooting%20Networks.md#ICMP%20Internet%20Control%20Message%20Protocol%7CICMP%20message) 
 
 >[!example]-
 >DNS pubblico google 8.8.8.8
