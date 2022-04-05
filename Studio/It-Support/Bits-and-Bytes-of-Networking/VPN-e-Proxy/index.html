@@ -12,7 +12,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://redgunny.github.io/quartz/",fetchData=Promise.all([fetch("https://redgunny.github.io/quartz/indices/linkIndex.1caac048f6d9af9813f281992614d3ee.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://redgunny.github.io/quartz/indices/contentIndex.c44c478d005c04eb0b3d41db853259b3.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://redgunny.github.io/quartz/",fetchData=Promise.all([fetch("https://redgunny.github.io/quartz/indices/linkIndex.895da349cfe8ecea7b323f24cc8b20bd.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://redgunny.github.io/quartz/indices/contentIndex.44517f6a3f0655b47be4c66af3dee45d.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-XYFD95KB4J',{anonymize_ip:!1})}</script>
@@ -79,15 +79,24 @@ Ad es. codici SMS o Token Generator possono essere usati oltre al login</p>
 <p>[!note]-
 Un gateway rientra di sicuro nella definizione di cosa è un proxy e come funziona</p>
 </blockquote>
-<p>!<a class="internal-link broken">Studio/Materiali/Proxy_concept_en.svg</a></p>
+<p>
+<img src=/Studio/Materiali/Proxy_concept_en.svg alt=Proxy_concept_en></p>
 <h2 id=web-proxies>Web Proxies</h2>
 <p>Proxy costruiti specificatamente per il traffico web, inoltrano le richieste HTTP che arrivano dal Client come normali richieste HTTP ai server</p>
 <h2 id=reverse-proxy>Reverse Proxy</h2>
 <p>Un servizio che potrebbe apparire come singolo server a client esterni ma in realtà rappresenta molti Server dietro esso
-!<a class="internal-link broken">Studio/Materiali/Reverse_proxy_h2g2bob.svg</a></p>
+<img src=/Studio/Materiali/Reverse_proxy_h2g2bob.svg alt=Reverse_proxy_h2g2bob></p>
 <h2 id=proxy-contro-nat>Proxy contro NAT</h2>
-<p>La maggior parte delle volte con il termine proxy ci si riferisce ad un&rsquo;applicazione del <a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Application-Layer rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Application-Layer>livello 7</a> del <a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/OSI-model rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/OSI-model>Modello OSI</a>.
-Ad ogni modo esistono altri modi di &ldquo;proxare&rdquo; uno di questi è attraverso il <a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Network-Layer rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Network-Layer>Layer 3</a> è conosciuto come <a href="/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Basics-of-NAT#NAT Network Address Translation" rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Basics-of-NAT>NAT</a>. Le differenze tra queste due tecnologie di realizzare proxy sono il livello in cui operano e la procedura di configurazione dei client e dei server che adottano.</p>
+<p>La maggior parte delle volte con il termine proxy ci si riferisce ad un&rsquo;applicazione del
+<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Application-Layer rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Application-Layer>livello 7
+</a> del
+<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/OSI-model rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/OSI-model>Modello OSI
+</a>.
+Ad ogni modo esistono altri modi di &ldquo;proxare&rdquo; uno di questi è attraverso il
+<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Network-Layer rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Network-Layer>Layer 3
+</a> è conosciuto come
+<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Basics-of-NAT rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Basics-of-NAT>
+</a>. Le differenze tra queste due tecnologie di realizzare proxy sono il livello in cui operano e la procedura di configurazione dei client e dei server che adottano.</p>
 <p>Nella configurazione del client per il proxy di livello 3 (NAT) è sufficiente configurare il gateway. Per quello di livello 7 invece, la destinazione dei pacchetti che genera il client deve essere sempre il server proxy, che legge ogni pacchetto e trova la destinazione reale.</p>
 <p>Il NAT poiché opera a livello 3 richiede meno risorse rispetto al proxy di livello 7, ma è allo stesso tempo meno flessibile.</p>
 </article>

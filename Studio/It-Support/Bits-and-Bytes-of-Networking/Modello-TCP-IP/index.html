@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=description content="#Reti #TCP/IP #Network #Physical_layer #Data-Link_Layer #Network_Layer #Transport_Layer #Application_Layer
-[[Studio/It Support/Bits and Bytes of Networking/Modello TCP IP]]:    N° Layer Name Protocols Protocol Data Unit Addressing Devices     [[#5 Application Layer|5]] [[Studio/It Support/Bits and Bytes of Networking/Application Layer]] Http, Https, Smtp, etc Messages (Messaggi) n/a Browser, Email Client, etc   [[Studio/It Support/Bits and Bytes of Networking/Modello TCP IP#4 Transport Layer Layer di trasporto|4]] [[Studio/It Support/Bits and Bytes of Networking/Transport Layer]] TCP/UDP Segments (Segmenti) Port Number :#    [[#3 Network Layer Layer di Rete altri_nomi_network|3]] [[Studio/It Support/Bits and Bytes of Networking/Network Layer]] IPv4/IPv6 Datagrams (Datagrammi) IP Address Routers   [[#2 Data Link Layer altri_nomi|2]] [[Studio/It Support/Bits and Bytes of Networking/Data-Link Layer]] Ethernet/Wifi Frames Mac Adress Switch   [[#1 Physical Layer Layer Fisico|1]] [[Studio/It Support/Bits and Bytes of Networking/Physical Layer]] 10 Base T, 802.">
+Modello TCP IP :    N° Layer Name Protocols Protocol Data Unit Addressing Devices      5   Application Layer  Http, Https, Smtp, etc Messages (Messaggi) n/a Browser, Email Client, etc      Transport Layer  TCP/UDP Segments (Segmenti) Port Number :#     3   Network Layer  IPv4/IPv6 Datagrams (Datagrammi) IP Address Routers    2   Data-Link Layer  Ethernet/Wifi Frames Mac Adress Switch    1   Physical Layer  10 Base T, 802.">
 <title>🪴 PROVA 3.2</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" type=image/png href=https://redgunny.github.io/quartz//icon.png>
@@ -13,7 +13,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://redgunny.github.io/quartz/",fetchData=Promise.all([fetch("https://redgunny.github.io/quartz/indices/linkIndex.1caac048f6d9af9813f281992614d3ee.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://redgunny.github.io/quartz/indices/contentIndex.c44c478d005c04eb0b3d41db853259b3.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://redgunny.github.io/quartz/",fetchData=Promise.all([fetch("https://redgunny.github.io/quartz/indices/linkIndex.895da349cfe8ecea7b323f24cc8b20bd.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://redgunny.github.io/quartz/indices/contentIndex.44517f6a3f0655b47be4c66af3dee45d.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-XYFD95KB4J',{anonymize_ip:!1})}</script>
@@ -50,17 +50,19 @@ Last updated April 5, 2022
 <summary>Table of Contents</summary>
 <nav id=TableOfContents>
 <ol>
-<li><a href=#1studioit-supportbits-and-bytes-of-networkingphysical-layer>1.[[Studio/It Support/Bits and Bytes of Networking/Physical Layer]]:</a></li>
-<li><a href=#2studioit-supportbits-and-bytes-of-networkingdata-link-layer-layer-altri_nomi>2.[[Studio/It Support/Bits and Bytes of Networking/Data-Link Layer]] Layer: </a></li>
-<li><a href=#3studioit-supportbits-and-bytes-of-networkingnetwork-layerlayer-di-retenetwork-layer-altri_nomi_network>3.[[Studio/It Support/Bits and Bytes of Networking/Network Layer#Layer di Rete|Network Layer]]: </a></li>
+<li><a href=#1physical-layerstudioit20supportbits20and20bytes20of20networkingphysical20layermd>1.<a href=Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Physical%20Layer.md>Physical Layer</a>:</a></li>
+<li><a href=#2data-link-layerstudioit20supportbits20and20bytes20of20networkingdata-link20layermd-layer-altri_nomi>2.<a href=Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Data-Link%20Layer.md>Data-Link Layer</a> Layer: </a></li>
+<li><a href=#3studioit20supportbits20and20bytes20of20networkingnetwork20layermdlayer20di20rete7cnetwork20layer-altri_nomi_network>3.<a href=Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Network%20Layer.md#Layer%20di%20Rete%7CNetwork%20Layer></a>: </a></li>
 <li><a href=#4-transport-layer>4. Transport Layer:</a></li>
-<li><a href=#5-studioit-supportbits-and-bytes-of-networkingapplication-layer>5. [[Studio/It Support/Bits and Bytes of Networking/Application Layer]]:</a></li>
+<li><a href=#5-application-layerstudioit20supportbits20and20bytes20of20networkingapplication20layermd>5. <a href=Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Application%20Layer.md>Application Layer</a>:</a></li>
 </ol>
 </nav>
 </details>
 </aside>
 <p>#Reti #TCP/IP #Network #Physical_layer #Data-Link_Layer #Network_Layer #Transport_Layer #Application_Layer</p>
-<h1 id=studioit-supportbits-and-bytes-of-networkingmodello-tcp-ip><a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Modello-TCP-IP rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Modello-TCP-IP>Studio/It Support/Bits and Bytes of Networking/Modello TCP IP</a>:</h1>
+<h1 id=modello-tcp-ipstudioit20supportbits20and20bytes20of20networkingmodello20tcp20ipmd>
+<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Modello-TCP-IP rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Modello-TCP-IP>Modello TCP IP
+</a>:</h1>
 <table>
 <thead>
 <tr>
@@ -74,57 +76,91 @@ Last updated April 5, 2022
 </thead>
 <tbody>
 <tr>
-<td><a href="/quartz#5 Application Layer" rel=noopener class=internal-link data-src=/quartz>5</a></td>
-<td><a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Application-Layer rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Application-Layer>Studio/It Support/Bits and Bytes of Networking/Application Layer</a></td>
+<td>
+<a rel=noopener class="internal-link broken" data-src=#5%20Application%20Layer%5C>5
+</a></td>
+<td>
+<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Application-Layer rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Application-Layer>Application Layer
+</a></td>
 <td>Http, Https, Smtp, etc</td>
 <td>Messages (Messaggi)</td>
 <td>n/a</td>
 <td>Browser, Email Client, etc</td>
 </tr>
 <tr>
-<td><a href="/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Modello-TCP-IP#4 Transport Layer Layer di trasporto" rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Modello-TCP-IP>4</a></td>
-<td><a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Transport-Layer rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Transport-Layer>Studio/It Support/Bits and Bytes of Networking/Transport Layer</a></td>
+<td>
+<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Modello-TCP-IP rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Modello-TCP-IP>
+</a></td>
+<td>
+<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Transport-Layer rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Transport-Layer>Transport Layer
+</a></td>
 <td>TCP/UDP</td>
 <td>Segments (Segmenti)</td>
 <td>Port Number :#</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="/quartz#3 Network Layer Layer di Rete altri_nomi_network" rel=noopener class=internal-link data-src=/quartz>3</a></td>
-<td><a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Network-Layer rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Network-Layer>Studio/It Support/Bits and Bytes of Networking/Network Layer</a></td>
+<td>
+<a rel=noopener class="internal-link broken" data-src=#3%20Network%20Layer%20Layer%20di%20Rete%20altri_nomi_network%5C>3
+</a></td>
+<td>
+<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Network-Layer rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Network-Layer>Network Layer
+</a></td>
 <td>IPv4/IPv6</td>
 <td>Datagrams (Datagrammi)</td>
 <td>IP Address</td>
 <td>Routers</td>
 </tr>
 <tr>
-<td><a href="/quartz#2 Data Link Layer altri_nomi" rel=noopener class=internal-link data-src=/quartz>2</a></td>
-<td><a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Data-Link-Layer rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Data-Link-Layer>Studio/It Support/Bits and Bytes of Networking/Data-Link Layer</a></td>
+<td>
+<a rel=noopener class="internal-link broken" data-src=#2%20Data%20Link%20Layer%20altri_nomi%5C>2
+</a></td>
+<td>
+<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Data-Link-Layer rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Data-Link-Layer>Data-Link Layer
+</a></td>
 <td>Ethernet/Wifi</td>
 <td>Frames</td>
 <td>Mac Adress</td>
 <td>Switch</td>
 </tr>
 <tr>
-<td><a href="/quartz#1 Physical Layer Layer Fisico" rel=noopener class=internal-link data-src=/quartz>1</a></td>
-<td><a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Physical-Layer rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Physical-Layer>Studio/It Support/Bits and Bytes of Networking/Physical Layer</a></td>
+<td>
+<a rel=noopener class="internal-link broken" data-src=#1%20Physical%20Layer%20Layer%20Fisico%5C>1
+</a></td>
+<td>
+<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Physical-Layer rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Physical-Layer>Physical Layer
+</a></td>
 <td>10 Base T, 802.11</td>
 <td>Bits (0 1)</td>
 <td>n/a</td>
-<td><a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Alcuni-Dispositivi-di-Rete#Hub rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Alcuni-Dispositivi-di-Rete>Hubs</a>, Cavi di Rame, Fibra Ottica, Onde Radio</td>
+<td>
+<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Alcuni-Dispositivi-di-Rete rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Alcuni-Dispositivi-di-Rete>
+</a>, Cavi di Rame, Fibra Ottica, Onde Radio</td>
 </tr>
 </tbody>
 </table>
-<p>Si compara con il <a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/OSI-model rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/OSI-model>modello OSI</a></p>
-<h2 id=1studioit-supportbits-and-bytes-of-networkingphysical-layer>1.<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Physical-Layer rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Physical-Layer>Studio/It Support/Bits and Bytes of Networking/Physical Layer</a>:</h2>
+<p>Si compara con il
+<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/OSI-model rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/OSI-model>modello OSI
+</a></p>
+<h2 id=1physical-layerstudioit20supportbits20and20bytes20of20networkingphysical20layermd>1.
+<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Physical-Layer rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Physical-Layer>Physical Layer
+</a>:</h2>
 <p>Rappresenta il dispositivo &ldquo;fisico&rdquo; che connette i computer. Il suo obiettivo è quello di gestire il mezzo trasmissivo (Ad esempio: Onde radio, corrente elettrica, segnale cavo) ^a6c30f</p>
 <hr>
-<h2 id=2studioit-supportbits-and-bytes-of-networkingdata-link-layer-layer-altri_nomi>2.<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Data-Link-Layer rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Data-Link-Layer>Studio/It Support/Bits and Bytes of Networking/Data-Link Layer</a> Layer: <sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></h2>
-<p>Responsabile di definire un via comune di interpretare i segnali in modo da fare comunicare i dispositivi nella rete. (Ad esempio: <a href=/quartz#^4093fe rel=noopener class=internal-link data-src=/quartz>Standard Ethernet</a>, <a class="internal-link broken">Standard WIFI</a>). ^4c42e6</p>
+<h2 id=2data-link-layerstudioit20supportbits20and20bytes20of20networkingdata-link20layermd-layer-altri_nomi>2.
+<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Data-Link-Layer rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Data-Link-Layer>Data-Link Layer
+</a> Layer: <sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></h2>
+<p>Responsabile di definire un via comune di interpretare i segnali in modo da fare comunicare i dispositivi nella rete. (Ad esempio:
+<a rel=noopener class="internal-link broken" data-src=#%5E4093fe%20>Standard Ethernet
+</a>,
+<a rel=noopener class="internal-link broken" data-src=Standard%20WIFI>Standard WIFI
+</a>). ^4c42e6</p>
 <ul>
 <li><strong>Standard Ethernet:</strong> Protocollo responsabile per l&rsquo;acquisizione di dati sulla stessa rete o collegamento ^4093fe</li>
 </ul>
-<h2 id=3studioit-supportbits-and-bytes-of-networkingnetwork-layerlayer-di-retenetwork-layer-altri_nomi_network>3.<a href="/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Network-Layer#Layer di Rete" rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Network-Layer>Network Layer</a>: <sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup></h2>
+<h2 id=3studioit20supportbits20and20bytes20of20networkingnetwork20layermdlayer20di20rete7cnetwork20layer-altri_nomi_network>3.
+<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Network-Layer rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Network-Layer>
+</a>: <sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup></h2>
 <p>Permette a diverse reti di comunicare fra di loro attraverso i Router. I dati possono attraversare molteplici reti e nodi ^5bomxv</p>
 <ul>
 <li>Internetwork: Collezioni di reti connesse tramite routers, la più famosa è Internet</li>
@@ -135,10 +171,15 @@ Last updated April 5, 2022
 <p>Si occupa di individuare quale programma client deve inviare dati e quale programma server deve ricevere quei dati. Fa uso principalmente di uno di due protocolli:</p>
 <ul>
 <li><strong>Protocollo TCP (Transmission Control Protocol):</strong> Si assicura che i dati siano inviati correttamente attendendo conferma dal dispositivo ricevente. ^87c1fb</li>
-<li><strong>Protocollo UDP (User Datagram Protocol):</strong> Non affidabile quanto il <a href=/quartz#^87c1fb rel=noopener class=internal-link data-src=/quartz>Protocollo TCP</a> ma un po' più veloce</li>
+<li><strong>Protocollo UDP (User Datagram Protocol):</strong> Non affidabile quanto il
+<a rel=noopener class="internal-link broken" data-src=#%5E87c1fb>Protocollo TCP
+</a> ma un po' più veloce</li>
 </ul>
-<h2 id=5-studioit-supportbits-and-bytes-of-networkingapplication-layer>5. <a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Application-Layer rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Application-Layer>Studio/It Support/Bits and Bytes of Networking/Application Layer</a>:</h2>
-<p>Primo layer da cui la trasmissione di pacchetti di dati ha inizio, ultimo layer a ricevere pacchetti dei dati, un sacco di protocolli lavorano su questo layer come ad esempio quelli per navigare sui siti internet o ricevere email.!<a class="internal-link broken">right-wrap</a></p>
+<h2 id=5-application-layerstudioit20supportbits20and20bytes20of20networkingapplication20layermd>5.
+<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Application-Layer rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Application-Layer>Application Layer
+</a>:</h2>
+<p>Primo layer da cui la trasmissione di pacchetti di dati ha inizio, ultimo layer a ricevere pacchetti dei dati, un sacco di protocolli lavorano su questo layer come ad esempio quelli per navigare sui siti internet o ricevere email.
+<img src=/Studio/Excalidraw/Client-server-base.excalidraw.md alt=right-wrap></p>
 <p>Un singolo programma può essere definito per la funzione che ha nella rete, quella di richiedere dati (Client) e quella di ricevere richieste e rispondere con i dati (Server) ^28682e</p>
 <hr>
 <section class=footnotes role=doc-endnotes>

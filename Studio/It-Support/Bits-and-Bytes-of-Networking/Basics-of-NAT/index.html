@@ -13,7 +13,7 @@ Prende un indirizzo IP e lo traduce in un altro (per molte ragioni: dalle questi
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://redgunny.github.io/quartz/",fetchData=Promise.all([fetch("https://redgunny.github.io/quartz/indices/linkIndex.1caac048f6d9af9813f281992614d3ee.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://redgunny.github.io/quartz/indices/contentIndex.c44c478d005c04eb0b3d41db853259b3.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://redgunny.github.io/quartz/",fetchData=Promise.all([fetch("https://redgunny.github.io/quartz/indices/linkIndex.895da349cfe8ecea7b323f24cc8b20bd.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://redgunny.github.io/quartz/indices/contentIndex.44517f6a3f0655b47be4c66af3dee45d.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-XYFD95KB4J',{anonymize_ip:!1})}</script>
@@ -52,7 +52,7 @@ Last updated April 5, 2022
 <ol>
 <li><a href=#ip-masquerading>IP Masquerading</a></li>
 <li><a href=#one-to-many-nat>One to Many NAT</a></li>
-<li><a href=#nat-e-il-studioit-supportbits-and-bytes-of-networkingtransport-layer>Nat e il [[Studio/It Support/Bits and Bytes of Networking/Transport Layer]]</a>
+<li><a href=#nat-e-il-transport-layerstudioit20supportbits20and20bytes20of20networkingtransport20layermd>Nat e il <a href=Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Transport%20Layer.md>Transport Layer</a></a>
 <ol>
 <li><a href=#port-preservation>Port Preservation</a></li>
 <li><a href=#port-forwarding>Port Forwarding</a></li>
@@ -65,9 +65,15 @@ Last updated April 5, 2022
 <p>E' una tecnica più che essere uno standard definito</p>
 <p>Prende un indirizzo IP e lo traduce in un altro (per molte ragioni: dalle questioni di sicurezza al volere semplicemente risparmiare indirizzi IPv4)</p>
 <h1 id=nat-network-address-translation>NAT (Network Address Translation)</h1>
-<p>Tecnologia che permette a un Gateway ( solitamente un <a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting#^afaac9 rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting>Router</a> o un firewall) di riscrivere il <a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Network-Layer#^vry423 rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Network-Layer>source IP</a> di un <a href="/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Network-Layer#IPv4 Datagram Header" rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Network-Layer>datagramma IP</a> in uscita mentre mantenendo (salvando?) l&rsquo;IP originale in modo da riscriverlo nella risposta</p>
+<p>Tecnologia che permette a un Gateway ( solitamente un
+<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Subnetting>
+</a> o un firewall) di riscrivere il
+<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Network-Layer rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Network-Layer>
+</a> di un
+<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Network-Layer rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Network-Layer>
+</a> in uscita mentre mantenendo (salvando?) l&rsquo;IP originale in modo da riscriverlo nella risposta</p>
 <p>#inserire_immagine
-!<a class="internal-link broken">nat%201.jpg</a></p>
+<img src=/Studio/It%20Support/WebPages/Week%204%20Google%20IT%20Support%20Professional%20Certificate%2011%20%20Course%202%20WEEK%204%20Networking%20Services%20%E2%80%94%20Steemit/nat%201.jpg alt=nat%201.jpg></p>
 <p>Ciò permette di avere 2 tipologie di IP:</p>
 <ol>
 <li>
@@ -83,16 +89,22 @@ Il NAT è un modo che permette l&rsquo;IP Masquerading (di mascherare il proprio
 <p>Questo previene connessione dirette fra i PC di queste reti</p>
 <h2 id=one-to-many-nat>One to Many NAT</h2>
 <p>Inoltre è possibile avere molteplici host (PC) a cui l&rsquo;IP viene &ldquo;tradotto&rdquo; dal router che maschererà tutti gli IP dei pc con lo stesso IP NAT</p>
-<h2 id=nat-e-il-studioit-supportbits-and-bytes-of-networkingtransport-layer>Nat e il <a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Transport-Layer rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Transport-Layer>Studio/It Support/Bits and Bytes of Networking/Transport Layer</a></h2>
+<h2 id=nat-e-il-transport-layerstudioit20supportbits20and20bytes20of20networkingtransport20layermd>Nat e il
+<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Transport-Layer rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Transport-Layer>Transport Layer
+</a></h2>
 <h3 id=port-preservation>Port Preservation</h3>
-<p>Tecnica nella quale la source port scelta dal client è la stessa usata dal router (Le porte per le connessioni in uscita usano una <a href="/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Transport-Layer#Ephemeral Port" rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Transport-Layer>porta effimera</a>)</p>
+<p>Tecnica nella quale la source port scelta dal client è la stessa usata dal router (Le porte per le connessioni in uscita usano una
+<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Transport-Layer rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Transport-Layer>
+</a>)</p>
 <p>Un router che effettua NAT terrà traccia delle source port e le userà per dirigere il traffico di ritorno al computer giusto</p>
 <p>#inserire_immagine</p>
 <h3 id=port-forwarding>Port Forwarding</h3>
 <p>Una Tecnica dove una specifica porta di destinazione può essere configurata per essere inviata a nodi specifici</p>
-<p>Permette il trasferimento dati da un computer ad un altro tramite una specifica <a href="/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Transport-Layer#Porta Port" rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Transport-Layer>porta</a> di comunicazione.</p>
+<p>Permette il trasferimento dati da un computer ad un altro tramite una specifica
+<a href=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Transport-Layer rel=noopener class=internal-link data-src=/quartz/Studio/It-Support/Bits-and-Bytes-of-Networking/Transport-Layer>
+</a> di comunicazione.</p>
 <p>Permette a un host esterno alla rete di raggiungere un host con indirizzo IP privato
-!<a class="internal-link broken">Studio/Materiali/NAPT-en.svg</a></p>
+<img src=/Studio/Materiali/NAPT-en.svg alt=NAPT-en></p>
 </article>
 <hr>
 <div class=page-end>
