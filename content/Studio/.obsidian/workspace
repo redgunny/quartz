@@ -1,0 +1,192 @@
+{
+  "main": {
+    "id": "9f3c1d90cc0a84a5",
+    "type": "split",
+    "children": [
+      {
+        "id": "1a12d118bab0ef83",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "It Support/Bits and Bytes of Networking/IPv6.md",
+            "mode": "source",
+            "backlinks": false,
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "64d6ed4e98cacfb3",
+    "type": "split",
+    "children": [
+      {
+        "id": "87821bab281c05a1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4e53a8143130651f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "459a921567555512",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "|collision",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5af7b12cd33c701a",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "ffd9f0d27e03b415",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 467
+  },
+  "right": {
+    "id": "74a774d442251405",
+    "type": "split",
+    "children": [
+      {
+        "id": "04635734293c2c93",
+        "type": "tabs",
+        "dimension": 52.62172284644194,
+        "children": [
+          {
+            "id": "cea06835f32a72c9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "It Support/Bits and Bytes of Networking/IPv6.md"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "4ec4d56c7f2240ef",
+        "type": "tabs",
+        "dimension": 18.726591760299627,
+        "children": [
+          {
+            "id": "afa93f8519300927",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "It Support/Bits and Bytes of Networking/IPv6.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "24c4aae669dad69b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "It Support/Bits and Bytes of Networking/IPv6.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "0f87d681af5df2d2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false
+              }
+            }
+          },
+          {
+            "id": "d864f41dbc61079f",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "a87a556b0a18055f",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "3c2505350e5f1f52",
+        "type": "tabs",
+        "dimension": 28.651685393258425,
+        "children": [
+          {
+            "id": "68bf73450a73fbc4",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "1a12d118bab0ef83",
+  "lastOpenFiles": [
+    "It Support/Bits and Bytes of Networking/IPv6.md",
+    "It Support/Bits and Bytes of Networking/0. Bits and Bytes of Networking index.md",
+    "It Support/Bits and Bytes of Networking/Network Layer.md",
+    "It Support/Bits and Bytes of Networking/Cloud.md",
+    "It Support/Bits and Bytes of Networking/Classi di Indirizzi IP (IP Address classes).md",
+    "It Support/Bits and Bytes of Networking/Basic Binary Math.md",
+    "It Support/WebPages/Week 5 Google IT Support Professional Certificate 12  Course 2 WEEK 5 Connecting to the Internet — Steemit/bytes.jpg",
+    "It Support/Bits and Bytes of Networking/Name Resolution.md",
+    "It Support/Bits and Bytes of Networking/Troubleshooting Networks.md",
+    "It Support/Bits and Bytes of Networking/DNS Round Robin.md"
+  ]
+}

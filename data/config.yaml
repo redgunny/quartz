@@ -1,4 +1,4 @@
-name: Jacky Zhao
+name: Umberto Visentin
 enableToc: true
 openToc: false
 enableLinkPreview: true
@@ -10,6 +10,6 @@ page_title:
   "🪴 Quartz 3.2"
 links:
   - link_name: Twitter
-    link: https://twitter.com/_jzhao
+    link:
   - link_name: Github
-    link: https://github.com/jackyzha0
+    link: https://github.com/redgunny

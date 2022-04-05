@@ -25,3 +25,29 @@ If you prefer browsing the contents of this site through a list instead of a gra
 - 🚧 [Troubleshooting and FAQ](notes/troubleshooting.md)
 - 🐛 [Submit an Issue](https://github.com/jackyzha0/quartz/issues)
 - 👀 [Discord Community](https://discord.gg/cRFFHYye7t)
+
+
+# PROVA
+#reti
+[[Modello TCP IP]]
+[[Cavi di Rete]]
+[[Alcuni Dispositivi di Rete]]
+[[Physical Layer]]
+[[Data-Link Layer]]
+[[Network Layer]]
+[[Subnetting]]
+[[Basic Binary Math]]
+[[Routing]]
+[[Transport Layer]]
+[[Application Layer]]
+[[Name Resolution]]
+[[DNS Round Robin]]
+[[DHCP]]
+[[Basics of NAT]]
+[[VPN e Proxy]]
+[[Broadband Connections (and more)]]
+[[WAN]]
+[[Wireless Technologies]]
+[[Troubleshooting Networks]]
+[[Cloud]]
+[[IPv6]]

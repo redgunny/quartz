@@ -1,0 +1,32 @@
+{
+  "legacyEditor": false,
+  "livePreview": true,
+  "promptDelete": false,
+  "attachmentFolderPath": "Materiali",
+  "alwaysUpdateLinks": true,
+  "fileSortOrder": "alphabetical",
+  "spellcheckDictionary": [
+    "Client",
+    "Servers",
+    "and",
+    "Clients",
+    "routing",
+    "Networks",
+    "Layer",
+    "Mac",
+    "Address",
+    "layer",
+    "Crosstalk",
+    "Switch",
+    "Hub"
+  ],
+  "showLineNumber": true,
+  "spellcheck": true,
+  "spellcheckLanguages": [
+    "it",
+    "en-US",
+    "en-GB"
+  ],
+  "readableLineLength": true,
+  "showFrontmatter": true
+}
