@@ -45,7 +45,9 @@ If you prefer browsing the contents of this site through a list instead of a gra
 [[Studio/It Support/Bits and Bytes of Networking/DHCP]]
 [[Studio/It Support/Bits and Bytes of Networking/Basics of NAT]]
 [[Studio/It Support/Bits and Bytes of Networking/VPN e Proxy]]
-[[and more)](Studio/It Support/Bits and Bytes of Networking/Broadband Connections (and more|Broadband Connections (and more)]].md)
+
+[[Studio/It Support/Bits and Bytes of Networking/Broadband Connections (and more)]]
+
 [[Studio/It Support/Bits and Bytes of Networking/WAN]]
 [[Studio/It Support/Bits and Bytes of Networking/Wireless Technologies]]
 [[Studio/It Support/Bits and Bytes of Networking/Troubleshooting Networks]]

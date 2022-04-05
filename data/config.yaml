@@ -7,13 +7,9 @@ description:
   Host your second brain and digital garden for free. Quartz features extremely fast full-text search,
   Wikilink support, backlinks, local graph, tags, and link previews.
 page_title:
-  "🪴 Quartz 3.2"
+  "🪴 PROVA 3.2"
 links:
   - link_name: Twitter
-<<<<<<< HEAD
-    link:
-=======
-    link: 
->>>>>>> bd858cc570cfcc03d26d2df0429e2de8925df3b0
+    link: https://twitter.com
   - link_name: Github
     link: https://github.com/redgunny
