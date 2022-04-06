@@ -1,4 +1,12 @@
-#reti #Ip
+---
+title: "Classi di Indirizzi IP (IP Address classes)"
+tags:
+- reti 
+entabletoc: true
+#reti #Ip #reti 
+---
+
+
 ## Classi di Indirizzi IP (IP Address classes)
 #inserire_immagine 
 

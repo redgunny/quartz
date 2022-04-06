@@ -1,4 +1,12 @@
+---
+title: "Application Layer"
+tags:
+- reti 
+entabletoc: true
 #reti #Application_Layer 
+---
+
+
 # Layer Applicativo (Application Layer)
 Il [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Transport%20Layer.md#Segmento%20TCP%20Transmission%20Control%20Protocol%20segment%7Cpayload%20TCP) contiene i dati di qualsiasi applicazione che voglia scambiarsi dati l'una con l'altra
 

@@ -1,13 +1,23 @@
+---
+title: "DHCP"
+tags:
+- reti 
+entabletoc: true
+#reti
+---
+
+
 >[!info]-
 Per funzionare su una rete con [Modello TCP IP](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Modello%20TCP%20IP.md) moderna un computer ha bisogno che siano configurate 4 cose:
 > 1. Indirizzo IP
-> 2. [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Subnetting.md#Subnet%20Mask%7Csubnet%20mask) della rete locale
-> 3. [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Subnetting.md#^afaac9%7CGateway) (primario)
-> 4. [](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#Tipi%20di%20server%20DNS%7CDSN%20name%20server)
-> #inserire_immagine 
+> 2. [Subnet mask](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Subnetting.md#Subnet%20Mask%7Csubnet%20mask) della rete locale
+> 3. [Gateway](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Subnetting.md#^afaac9%7CGateway) (primario)
+> 4. [Server DNS](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Name%20Resolution.md#Tipi%20di%20server%20DNS%7CDSN%20name%20server)
+>[[Studio/It Support/Bits and Bytes of Networking/Name Resolution#Tipi di server DNS | Server DNS]]
 > 
 > Con gli ultimi tre che sono principalmente uguali per ogni nodo nella rete locale e con l'indirizzo IP che invece cambia per ogni nodo
 
+> #inserire_immagine 
 # Dynamic Host Configuration Protocol (DHCP)
 Un protocollo dell'[Application Layer](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Application%20Layer.md) che automatizza il processo di configurazione degli host su una rete, utile specialmente se in una rete sono presenti un gran numero di dispositivi.
 

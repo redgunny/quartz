@@ -1,3 +1,11 @@
+---
+title: "Name Resolution"
+tags:
+- reti 
+entabletoc: true
+#reti
+---
+
 [Servizi di Rete](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Servizi%20di%20Rete.md)
 #reti 
 # Name Resolution

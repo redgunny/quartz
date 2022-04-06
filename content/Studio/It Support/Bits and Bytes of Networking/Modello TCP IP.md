@@ -34,7 +34,7 @@ Responsabile di definire un via comune di interpretare i segnali in modo da fare
 - **Standard Ethernet:** Protocollo responsabile per l'acquisizione di dati sulla stessa rete o collegamento ^4093fe
 
 
-## 3.[](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Network%20Layer.md#Layer%20di%20Rete%7CNetwork%20Layer): [^altri_nomi_network]
+## 3.[Network Layer](Studio/It%20Support/Bits%20and%20Bytes%20of%20Networking/Network%20Layer.md#Layer%20di%20Rete%7CNetwork%20Layer): [^altri_nomi_network]
 Permette a diverse reti di comunicare fra di loro attraverso i Router. I dati possono attraversare molteplici reti e nodi ^5bomxv
 
 - Internetwork: Collezioni di reti connesse tramite routers, la più famosa è Internet

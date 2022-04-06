@@ -1,3 +1,10 @@
+---
+title: "Cloud"
+tags:
+- reti 
+entabletoc: true
+#reti
+---
 
 # Cloud Computing
 Nuovo modello nell'informatica dove grandi cluster di macchine ci permetto di usare le risorse dei dispositivi in maniera migliore.

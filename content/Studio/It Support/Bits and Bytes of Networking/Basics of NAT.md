@@ -1,3 +1,12 @@
+---
+title: "Basics of NAT"
+tags:
+- reti 
+entabletoc: true
+#reti  
+---
+
+
 E' una tecnica più che essere uno standard definito
 
 Prende un indirizzo IP e lo traduce in un altro (per molte ragioni: dalle questioni di sicurezza al volere semplicemente risparmiare indirizzi IPv4)

@@ -1,4 +1,11 @@
-#reti 
+---
+title: "Broadband Connections (and more)"
+tags:
+- reti 
+entabletoc: true
+#reti  
+---
+
 # Usenet
 # Public Switched Telephone Network (PSTN)
 #nonbroadband
